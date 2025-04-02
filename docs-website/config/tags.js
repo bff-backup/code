@@ -87,8 +87,6 @@ const tags = {
 	'wundergraph.operations.ts': '/docs/wundergraph-operations-ts-reference',
 	'wundergraph.server.ts reference': '/docs/wundergraph-server-ts-reference',
 	'wundergraph.server.ts': '/docs/wundergraph-server-ts-reference',
-	'WunderHub reference': '/docs/wunderhub-reference',
-	WunderHub: '/docs/components-of-wundergraph/wunderhub',
 	'WunderGraph Hub': '/docs/components-of-wundergraph/wunderhub',
 	'wunderctl up': '/docs/wunderctl-reference/wunderctl-up',
 	'wunderctl add': '/docs/wunderctl-reference/wunderctl-add',

@@ -57,10 +57,6 @@ All commands are run from the root of the project, from a terminal:
 - [WunderGraph Docs](https://wundergraph.com/docs)
 - [Astro Docs](https://docs.astro.build)
 
-## Deploy to WunderGraph Cloud
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=nextjs)
-
 ## Got Questions?
 
 Join us on [Discord](https://wundergraph.com/discord)!

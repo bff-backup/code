@@ -700,10 +700,6 @@ const navigation = [
 						title: 'WunderGraph Client',
 						href: '/docs/components-of-wundergraph/wundergraph-client',
 					},
-					{
-						title: 'WunderHub',
-						href: '/docs/components-of-wundergraph/wunderhub',
-					},
 				],
 			},
 			{
@@ -990,81 +986,6 @@ const navigation = [
 			{
 				title: 'Generate OpenAPI specs and Postman collections',
 				href: '/docs/features/openapi-postman',
-			},
-		],
-	},
-	{
-		title: 'Cloud',
-		href: '/docs/cloud',
-		icon: <CloudIcon />,
-		links: [
-			{
-				title: 'Overview',
-				navTitle: 'Cloud',
-				href: '/docs/cloud',
-			},
-			{
-				title: 'Workspace Configuration (wg.toml)',
-				href: '/docs/cloud/configuration',
-			},
-			{
-				title: 'Errors',
-				href: '/docs/cloud/errors',
-			},
-			{
-				title: 'Deployments',
-				links: [
-					{
-						title: 'Deploy to WunderGraph Cloud',
-						href: '/docs/cloud/deployments',
-					},
-					{
-						title: 'Add custom domains to your deployment',
-						href: '/docs/cloud/custom-domains',
-					},
-					{
-						title: 'Redeployment',
-						href: '/docs/cloud/redeployment',
-					},
-					{
-						title: 'Exclude Files from Deployments',
-						href: '/docs/cloud/wundergraph-ignore',
-					},
-					{
-						title: 'Private NPM dependencies',
-						href: '/docs/cloud/private-npm-dependencies',
-					},
-					{
-						title: 'Preview environments',
-						href: '/docs/cloud/preview-environments',
-					},
-				],
-			},
-			{
-				title: 'Integrations',
-				links: [
-					{
-						title: 'Deploy button',
-						href: '/docs/cloud/deploy-button',
-					},
-					{
-						title: 'Vercel',
-						href: '/docs/cloud/integrations/vercel',
-					},
-					{
-						title: 'Neon',
-						href: '/docs/cloud/integrations/neon',
-					},
-				],
-			},
-			{
-				title: 'Open Telemetry Tracing',
-				links: [
-					{
-						title: 'Public OpenTelemetry Collector',
-						href: '/docs/cloud/otel-collector',
-					},
-				],
 			},
 		],
 	},

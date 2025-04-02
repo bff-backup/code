@@ -61,9 +61,3 @@ Now, we can run the application using `npm run start`, this will start WunderGra
 
 - [Guides](/docs/guides)
 - [Expo](https://expo.io/)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use WunderGraph Cloud.
-
-{% deploy template="simple" /%}

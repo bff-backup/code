@@ -29,8 +29,4 @@ It correctly bundles Solid in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-## Deploy to WunderGraph Cloud
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=vite-solidjs)
-
 You can deploy the `dist` folder to any static host provider (vercel, netlify, surge, now, etc.)

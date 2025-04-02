@@ -85,7 +85,3 @@ In Svelte component,
 
 - [Guides](/docs/guides)
 - [Svelte Query client documentation](/docs/clients-reference/svelte-query)
-
-## Deploy to WunderGraph Cloud
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=vite-svelte)

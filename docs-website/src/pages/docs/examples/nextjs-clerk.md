@@ -63,9 +63,3 @@ Clicking the `Login` button will redirect you to the Clerk login page. After log
 
 - [Clerk documentation](https://clerk.com/docs)
 - [Next.js client documentation](/docs/clients-reference/nextjs)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use [WunderGraph Cloud](https://cloud.wundergraph.com). Enable the [Vercel integration](https://vercel.com/integrations/wundergraph) to deploy the Next.js frontend to Vercel.
-
-{% deploy template="nextjs-clerk" /%}

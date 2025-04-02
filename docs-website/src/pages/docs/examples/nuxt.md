@@ -116,9 +116,3 @@ Your operations will be compiled into RPC endpoints, so all you have to do is to
 
 - [Guides](/docs/guides)
 - [Nuxt client documentation](/docs/clients-reference/nuxt)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use [WunderGraph Cloud](https://cloud.wundergraph.com).
-
-{% deploy template="nuxt" /%}

@@ -73,9 +73,3 @@ You can read more about this in the ETag documentation.
 ## Learn more
 
 - [Guides](/docs/guides)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use WunderGraph Cloud.
-
-{% deploy template="simple" /%}

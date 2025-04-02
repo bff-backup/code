@@ -70,9 +70,3 @@ const { data } = await client.query({
 
 - [WunderGraph Client reference](/docs/clients-reference/typescript-client)
 - [Astro documentation](https://vitejs.dev)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use [WunderGraph Cloud](https://cloud.wundergraph.com). Enable the [Vercel integration](https://vercel.com/integrations/wundergraph) to deploy the Vite frontend to Vercel.
-
-{% deploy template="astro" /%}

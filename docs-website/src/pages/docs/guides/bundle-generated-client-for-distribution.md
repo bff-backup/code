@@ -156,10 +156,6 @@ pnpm publish --registry https://npm.my-registry.com --access restricted
 - [TSUP](https://tsup.egoist.dev/)
 - [Example repository](https://github.com/wundergraph/publish-client).
 
-## Deploy to WunderGraph Cloud
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=simple)
-
 ## Got Questions?
 
 Join us on [Discord](https://wundergraph.com/discord)!

@@ -31,10 +31,6 @@ This example includes how to work with Server Components as well as Experimental
 - Read the [WunderGraph Docs](https://wundergraph.com/docs).
 - Next.js 13 with [App directory](https://nextjs.org/docs)
 
-## Deploy to WunderGraph Cloud
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=nextjs-app-dir)
-
 ## Got Questions?
 
 Join us on [Discord](https://wundergraph.com/discord)!

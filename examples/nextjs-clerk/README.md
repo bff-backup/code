@@ -44,10 +44,6 @@ Once the login is complete, the Frontend will automatically fetch the data and i
 - [WunderGraph Docs](https://docs.wundergraph.com/docs/auth/token-based-auth/clerk).
 - [Clerk Docs](https://clerk.com/docs)
 
-## Deploy to WunderGraph Cloud
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=nextjs-clerk)
-
 ## Got Questions?
 
 Join us on [Discord](https://wundergraph.com/discord)!

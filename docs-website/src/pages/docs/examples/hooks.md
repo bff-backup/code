@@ -52,9 +52,3 @@ export default configureWunderGraphServer(() => ({
 
 - [Guides](/docs/guides)
 - [WunderGraph Server TS Reference](/docs/wundergraph-server-ts-reference)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use WunderGraph Cloud.
-
-{% deploy template="simple" /%}

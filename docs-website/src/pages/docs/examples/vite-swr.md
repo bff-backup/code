@@ -193,9 +193,3 @@ import { SWRConfig, useSWRConfig } from '@wundergraph/swr';
 - [@wundergraph/swr reference](/docs/clients-reference/swr)
 - [SWR documentation](https://swr.vercel.app/)
 - [Vite documentation](https://vitejs.dev)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use [WunderGraph Cloud](https://cloud.wundergraph.com). Enable the [Vercel integration](https://vercel.com/integrations/wundergraph) to deploy the Vite frontend to Vercel.
-
-{% deploy template="vite-swr" /%}

@@ -41,5 +41,3 @@ To learn more about WunderGraph Relay integration, read our [Quickstart Guide](h
 ## Learn More about expo
 
 - [Expo Docs](https://docs.expo.dev/)
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=expo-relay)

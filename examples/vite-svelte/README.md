@@ -82,8 +82,4 @@ import { writable } from 'svelte/store';
 export default writable(0);
 ```
 
-## Deploy to WunderGraph Cloud
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=vite-svelte)
-
 You can deploy the `dist` folder to any static host provider (vercel, netlify, surge, now, etc.)

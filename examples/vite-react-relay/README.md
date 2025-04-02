@@ -48,5 +48,3 @@ const [queryReference, loadQuery] = useQueryLoader<AppDragonsQueryType>(AppDrago
 ## Learn more about WunderGraph + Relay
 
 To learn more about WunderGraph Relay integration, read our [Quickstart Guide](https://docs.wundergraph.com/docs/getting-started/relay-quickstart)
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=vite-react-relay)

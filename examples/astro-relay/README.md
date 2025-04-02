@@ -27,5 +27,3 @@ To learn more about WunderGraph Relay integration, read our [Quickstart Guide](h
 ## Learn More about Astro
 
 - [Astro Docs](https://docs.astro.build/en/getting-started/)
-
-[![Deploy to WunderGraph](https://wundergraph.com/button)](https://cloud.wundergraph.com/new/clone?templateName=astro-relay)

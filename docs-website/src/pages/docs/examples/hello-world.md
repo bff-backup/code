@@ -51,9 +51,3 @@ curl http://localhost:9991/operations/Dragons
 ## Learn more
 
 - [Guides](/docs/guides)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use WunderGraph Cloud.
-
-{% deploy template="simple" /%}

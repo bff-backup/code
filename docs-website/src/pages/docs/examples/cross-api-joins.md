@@ -87,9 +87,3 @@ This Operation is a valid GraphQL Operation and can be defined in your IDE with 
 ## Learn more
 
 - [The \_join field explain](/docs/core-concepts/_join-field)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph app is to use WunderGraph Cloud.
-
-{% deploy template="cross-api-joins" /%}

@@ -128,9 +128,3 @@ export default function Index() {
 - [@wundergraph/swr reference](/docs/clients-reference/swr)
 - [SWR documentation](https://swr.vercel.app/)
 - [Remix documentation](https://remix.run)
-
-## Deploy to WunderGraph Cloud
-
-The easiest way to deploy your WunderGraph backend is to use [WunderGraph Cloud](https://cloud.wundergraph.com). Enable the [Vercel integration](https://vercel.com/integrations/wundergraph) to deploy the Vite frontend to Vercel.
-
-{% deploy template="remix" /%}
