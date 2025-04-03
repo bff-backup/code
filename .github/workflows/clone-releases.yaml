@@ -1,0 +1,20 @@
+name: Clone Releases
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        type: boolean
+        default: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - name: Run action
+        uses: andrewthetechie/gha-clone-releases@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          src_repo: wundergraph/wundergraph
+          copy_assets: true
+          dry_run: ${{ inputs.dry_run }}
