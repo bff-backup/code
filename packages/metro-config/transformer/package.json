@@ -1,5 +1,5 @@
 {
-  "name": "wundergraph-metro-transformer",
+  "name": "undergraph-metro-transformer",
   "main": "../dist/transformer.js",
   "types": "../dist/transformer.d.ts"
 }

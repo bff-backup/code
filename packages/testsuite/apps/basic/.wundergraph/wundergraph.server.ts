@@ -3,7 +3,7 @@ import {
 	EnvironmentVariable,
 	WebhookVerifierKind,
 	configureWunderGraphServer,
-} from '@wundergraph/sdk/server';
+} from '@bff-backup/sdk/server';
 import { GraphQLNonNull, GraphQLObjectType, GraphQLSchema, GraphQLString } from 'graphql/index';
 import { GraphQLExecutionContext } from './generated/wundergraph.server';
 class GlobalContext {
@@ -27,7 +27,7 @@ class RequestContext {
 	}
 }
 
-declare module '@wundergraph/sdk/server' {
+declare module '@bff-backup/sdk/server' {
 	export interface CustomContext {
 		global: GlobalContext;
 		request: RequestContext;

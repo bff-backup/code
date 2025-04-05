@@ -7,7 +7,7 @@ import {
 	OperationRoleConfig,
 	OperationType,
 	VariableInjectionConfiguration,
-} from '@wundergraph/protobuf';
+} from '@bff-backup/protobuf';
 import {
 	BREAK,
 	buildSchema,

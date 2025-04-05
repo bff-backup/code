@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/swr",
+  "name": "@bff-backup/swr",
   "version": "0.19.3",
   "license": "Apache-2.0",
-  "description": "WunderGraph SWR Integration",
+  "description": "BFF Backup SWR Integration",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -26,13 +26,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/bff-backup/code.git"
   },
   "dependencies": {
     "react-ssr-prepass": "^1.5.0"
   },
   "peerDependencies": {
-    "@wundergraph/sdk": ">=0.110.0",
+    "@bff-backup/sdk": ">=0.110.0",
     "react": "^16.8.0 || ^17.0.2 || ^18.0.0",
     "react-dom": "^16.8.0 || ^17.0.2 || ^18.0.0",
     "swr": "^2.2.0"
@@ -46,7 +46,7 @@
     "@types/node-fetch": "2.6.2",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.6",
-    "@wundergraph/sdk": "workspace:*",
+    "@bff-backup/sdk": "workspace:*",
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.6.1",
     "nock": "^13.2.9",
@@ -58,14 +58,14 @@
     "tsup": "^6.7.0",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "keywords": [
     "swr",
-    "wundergraph",
+    "bff-backup",
     "react"
   ]
 }

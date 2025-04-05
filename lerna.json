@@ -15,7 +15,7 @@
   "loglevel": "verbose",
   "changelogPreset": "conventional-changelog-conventionalcommits",
   "packages": [
-    "packages/create-wundergraph-app",
+    "packages/create-bff-backup-app",
     "packages/golang-client",
     "packages/nextjs",
     "packages/orm",

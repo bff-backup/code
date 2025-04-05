@@ -1,5 +1,5 @@
 import process from 'node:process';
-import { ConfigurationVariable, ConfigurationVariableKind } from '@wundergraph/protobuf';
+import { ConfigurationVariable, ConfigurationVariableKind } from '@bff-backup/protobuf';
 import { Logger } from '../logger';
 
 export class EnvironmentVariable<DefaultValue extends string | number | boolean = string> {

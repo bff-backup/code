@@ -1,7 +1,7 @@
 //language=handlebars
 export const template = `
 import React, {useEffect, useState} from "react";
-import type { Response } from "@wundergraph/sdk";
+import type { Response } from "@bff-backup/sdk";
 {{#if hasModelImports}}import { {{modelImports}} } from "./models";{{/if}}
 {{#if hasHookImports}}import { {{hookImports}} } from "./hooks";{{/if}}
 import jsonSchema from "./jsonschema";

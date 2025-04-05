@@ -20,7 +20,7 @@ import { schemasTemplate, ormTemplate, emptyOrm } from './orm.template';
 
 import Handlebars from 'handlebars';
 
-import { codegen } from '@wundergraph/orm';
+import { codegen } from '@bff-backup/orm';
 
 // @todo move to utils or import from existing dependency
 const toTitleCase = (string: string) => string[0].toUpperCase() + string.substring(1).toLowerCase();

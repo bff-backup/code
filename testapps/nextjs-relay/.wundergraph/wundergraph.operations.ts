@@ -1,4 +1,4 @@
-import { configureWunderGraphOperations } from '@wundergraph/sdk';
+import { configureWunderGraphOperations } from '@bff-backup/sdk';
 
 export default configureWunderGraphOperations({
 	operations: {

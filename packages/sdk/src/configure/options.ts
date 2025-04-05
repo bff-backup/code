@@ -1,4 +1,4 @@
-import { ConfigurationVariable } from '@wundergraph/protobuf';
+import { ConfigurationVariable } from '@bff-backup/protobuf';
 import { EnvironmentVariable, InputVariable, mapInputVariable, resolveVariable } from './variables';
 
 export const isCloud = process.env.WG_CLOUD === 'true';

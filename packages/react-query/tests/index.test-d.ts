@@ -1,5 +1,5 @@
 import { createHooks } from '../src';
-import { Client, ResponseError, OperationsDefinition, User } from '@wundergraph/sdk/client';
+import { Client, ResponseError, OperationsDefinition, User } from '@bff-backup/sdk/client';
 import { expectType } from 'tsd';
 import { UseQueryResult } from '@tanstack/react-query';
 

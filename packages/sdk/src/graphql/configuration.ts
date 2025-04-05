@@ -6,7 +6,7 @@ import {
 	FieldConfiguration,
 	TypeConfiguration,
 	TypeField,
-} from '@wundergraph/protobuf';
+} from '@bff-backup/protobuf';
 import { ArgumentReplacement } from '../transformations/transformSchema';
 import { TypeNode } from 'graphql/language/ast';
 import { Kind } from 'graphql/language/kinds';

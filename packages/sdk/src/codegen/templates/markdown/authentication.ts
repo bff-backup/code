@@ -2,7 +2,7 @@ import { Template, TemplateOutputFile } from '../../index';
 import { CodeGenerationConfig } from '../../../configure';
 import { template } from './configure_auth_providers.template';
 import Handlebars from 'handlebars';
-import { AuthProviderKind } from '@wundergraph/protobuf';
+import { AuthProviderKind } from '@bff-backup/protobuf';
 
 export class AuthenticationProviderConfiguration implements Template {
 	generate(generationConfig: CodeGenerationConfig): Promise<TemplateOutputFile[]> {

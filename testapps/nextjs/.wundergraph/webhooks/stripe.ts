@@ -1,7 +1,7 @@
 import { createWebhook } from '../generated/wundergraph.webhooks';
 import Stripe from 'stripe';
 
-import { WebhookHttpEvent, WebhookHttpResponse } from '@wundergraph/sdk/server';
+import { WebhookHttpEvent, WebhookHttpResponse } from '@bff-backup/sdk/server';
 
 export default createWebhook<WebhookHttpEvent<Stripe.Event>, WebhookHttpResponse<{ type: string; name?: string }>>({
 	handler: async (event, ctx) => {

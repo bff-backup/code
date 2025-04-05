@@ -4,7 +4,7 @@ import {
 	templates,
 	configureWunderGraphGeneration,
 	EnvironmentVariable,
-} from '@wundergraph/sdk';
+} from '@bff-backup/sdk';
 import server from './wundergraph.server';
 import operations from './wundergraph.operations';
 

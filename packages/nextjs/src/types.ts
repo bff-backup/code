@@ -1,4 +1,4 @@
-import { Client, User } from '@wundergraph/sdk/client';
+import { Client, User } from '@bff-backup/sdk/client';
 import { Middleware } from 'swr';
 
 export type SSRCache = Record<string, any>;

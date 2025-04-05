@@ -262,7 +262,7 @@ importers:
 
   packages/golang-client:
     dependencies:
-      '@wundergraph/protobuf':
+      '@bff-backup/protobuf':
         specifier: workspace:^0.118.2
         version: link:../protobuf
       execa:
@@ -281,6 +281,9 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:^0.184.2
+        version: link:../sdk
       '@types/json-schema':
         specifier: ^7.0.6
         version: 7.0.11
@@ -293,9 +296,6 @@ importers:
       '@types/object-hash':
         specifier: ^1.3.4
         version: 1.3.4
-      '@wundergraph/sdk':
-        specifier: workspace:^0.184.2
-        version: link:../sdk
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
@@ -333,10 +333,10 @@ importers:
 
   packages/nextjs:
     dependencies:
-      '@wundergraph/protobuf':
+      '@bff-backup/protobuf':
         specifier: workspace:^0.118.2
         version: link:../protobuf
-      '@wundergraph/swr':
+      '@bff-backup/swr':
         specifier: workspace:*
         version: link:../swr
       handlebars:
@@ -346,6 +346,9 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(react@18.2.0)
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
       '@swc/core':
         specifier: ^1.3.14
         version: 1.3.14
@@ -370,9 +373,6 @@ importers:
       '@types/react':
         specifier: ^18.0.6
         version: 18.0.35
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
       jest:
         specifier: ^29.6.1
         version: 29.6.1(@types/node@17.0.45)(ts-node@10.9.1)
@@ -480,6 +480,9 @@ importers:
 
   packages/react-query:
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
       '@swc/core':
         specifier: ^1.3.14
         version: 1.3.14
@@ -507,9 +510,6 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.6
         version: 18.0.8
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
       jest:
         specifier: ^29.6.1
         version: 29.6.1(@types/node@18.16.16)(ts-node@10.9.1)
@@ -544,6 +544,9 @@ importers:
         specifier: ^16.9.0 || ^17 || ^18
         version: 18.2.0
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
       '@swc/core':
         specifier: ^1.3.46
         version: 1.3.52
@@ -565,9 +568,6 @@ importers:
       '@types/relay-runtime':
         specifier: ^14.1.10
         version: 14.1.10
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
       jest:
         specifier: ^29.6.1
         version: 29.6.1(@types/node@18.16.16)(ts-node@10.9.1)
@@ -598,7 +598,7 @@ importers:
 
   packages/rust-client:
     dependencies:
-      '@wundergraph/protobuf':
+      '@bff-backup/protobuf':
         specifier: workspace:^0.118.2
         version: link:../protobuf
       execa:
@@ -617,6 +617,9 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:^0.184.2
+        version: link:../sdk
       '@types/json-schema':
         specifier: ^7.0.6
         version: 7.0.11
@@ -629,15 +632,21 @@ importers:
       '@types/object-hash':
         specifier: ^1.3.4
         version: 1.3.4
-      '@wundergraph/sdk':
-        specifier: workspace:^0.184.2
-        version: link:../sdk
       typescript:
         specifier: ^5.1.6
         version: 5.1.6
 
   packages/sdk:
     dependencies:
+      '@bff-backup/orm':
+        specifier: workspace:*
+        version: link:../orm
+      '@bff-backup/protobuf':
+        specifier: workspace:^0.118.2
+        version: link:../protobuf
+      '@bff-backup/wunderctl':
+        specifier: workspace:^0.180.0
+        version: link:../wunderctl
       '@fastify/formbody':
         specifier: ^7.3.0
         version: 7.3.0
@@ -701,18 +710,9 @@ importers:
       '@whatwg-node/fetch':
         specifier: ^0.9.13
         version: 0.9.13
-      '@wundergraph/orm':
-        specifier: workspace:*
-        version: link:../orm
-      '@wundergraph/protobuf':
-        specifier: workspace:^0.118.2
-        version: link:../protobuf
       '@wundergraph/straightforward':
         specifier: ^4.2.5
         version: 4.2.5
-      '@wundergraph/wunderctl':
-        specifier: workspace:^0.180.0
-        version: link:../wunderctl
       axios:
         specifier: ^0.26.1
         version: 0.26.1(debug@4.3.4)
@@ -912,6 +912,9 @@ importers:
       '@babel/preset-typescript':
         specifier: ^7.22.5
         version: 7.22.5(@babel/core@7.22.9)
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
       '@jest/globals':
         specifier: ^29.3.1
         version: 29.4.2
@@ -930,9 +933,6 @@ importers:
       '@types/node-fetch':
         specifier: 2.6.2
         version: 2.6.2
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
       babel-jest:
         specifier: ^29.4.2
         version: 29.4.2(@babel/core@7.22.9)
@@ -972,6 +972,9 @@ importers:
 
   packages/svelte-query:
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
       '@sveltejs/package':
         specifier: ^2.2.0
         version: 2.2.0(svelte@3.55.1)(typescript@5.1.6)
@@ -996,9 +999,6 @@ importers:
       '@types/node-fetch':
         specifier: 2.6.2
         version: 2.6.2
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
       jest:
         specifier: ^29.6.1
         version: 29.6.1(@types/node@18.16.16)(ts-node@10.9.1)
@@ -1030,6 +1030,9 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(react@18.2.0)
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
       '@swc/core':
         specifier: ^1.3.14
         version: 1.3.14
@@ -1054,9 +1057,6 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.6
         version: 18.0.8
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
       jest:
         specifier: ^29.6.1
         version: 29.6.1(@types/node@18.16.16)(ts-node@10.9.1)
@@ -1090,6 +1090,12 @@ importers:
 
   packages/testsuite:
     dependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
+      '@bff-backup/wunderctl':
+        specifier: workspace:*
+        version: link:../wunderctl
       '@opensearch-project/opensearch':
         specifier: ^2.2.1
         version: 2.2.1
@@ -1099,12 +1105,6 @@ importers:
       '@opentelemetry/otlp-transformer':
         specifier: ^0.39.1
         version: 0.39.1(@opentelemetry/api@1.4.1)
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
-      '@wundergraph/wunderctl':
-        specifier: workspace:*
-        version: link:../wunderctl
       graphql:
         specifier: ^16.3.0
         version: 16.6.0
@@ -1112,15 +1112,15 @@ importers:
         specifier: ^3.22.3
         version: 3.22.3
     devDependencies:
+      '@bff-backup/rust-client':
+        specifier: workspace:^
+        version: link:../rust-client
       '@graphql-yoga/node':
         specifier: ^2.13.13
         version: 2.13.13(graphql@16.6.0)
       '@prisma/client':
         specifier: ^4.15.0
         version: 4.15.0(prisma@4.15.0)
-      '@wundergraph/rust-client':
-        specifier: workspace:^
-        version: link:../rust-client
       execa:
         specifier: 5.1.1
         version: 5.1.1
@@ -1154,6 +1154,9 @@ importers:
 
   packages/vue-query:
     devDependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../sdk
       '@swc/core':
         specifier: ^1.3.14
         version: 1.3.14
@@ -1178,9 +1181,6 @@ importers:
       '@types/node-fetch':
         specifier: 2.6.2
         version: 2.6.2
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../sdk
       jest:
         specifier: ^29.6.1
         version: 29.6.1(@types/node@18.16.16)(ts-node@10.9.1)
@@ -1242,18 +1242,18 @@ importers:
 
   testapps/default:
     dependencies:
+      '@bff-backup/golang-client':
+        specifier: workspace:*
+        version: link:../../packages/golang-client
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../../packages/sdk
       '@octokit/webhooks-types':
         specifier: ^6.10.0
         version: 6.10.0
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
-      '@wundergraph/golang-client':
-        specifier: workspace:*
-        version: link:../../packages/golang-client
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../../packages/sdk
       graphql:
         specifier: ^16.3.0
         version: 16.6.0
@@ -1285,6 +1285,15 @@ importers:
       '@babel/runtime':
         specifier: ^7.22.6
         version: 7.22.6
+      '@bff-backup/metro-config':
+        specifier: workspace:*
+        version: link:../../packages/metro-config
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../../packages/sdk
+      '@bff-backup/swr':
+        specifier: workspace:*
+        version: link:../../packages/swr
       '@expo/webpack-config':
         specifier: ^18.1.2
         version: 18.1.2(expo@48.0.17)
@@ -1294,15 +1303,6 @@ importers:
       '@rnx-kit/metro-resolver-symlinks':
         specifier: ^0.1.27
         version: 0.1.27
-      '@wundergraph/metro-config':
-        specifier: workspace:*
-        version: link:../../packages/metro-config
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../../packages/sdk
-      '@wundergraph/swr':
-        specifier: workspace:*
-        version: link:../../packages/swr
       expo:
         specifier: ^48.0.17
         version: 48.0.17(@babel/core@7.22.9)
@@ -1340,10 +1340,10 @@ importers:
 
   testapps/nextauth:
     dependencies:
-      '@wundergraph/nextjs':
+      '@bff-backup/nextjs':
         specifier: workspace:*
         version: link:../../packages/nextjs
-      '@wundergraph/sdk':
+      '@bff-backup/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
       graphql:
@@ -1395,24 +1395,24 @@ importers:
 
   testapps/nextjs:
     dependencies:
+      '@bff-backup/nextjs':
+        specifier: workspace:*
+        version: link:../../packages/nextjs
+      '@bff-backup/react-query':
+        specifier: workspace:*
+        version: link:../../packages/react-query
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../../packages/sdk
+      '@bff-backup/swr':
+        specifier: workspace:*
+        version: link:../../packages/swr
       '@graphql-yoga/node':
         specifier: ^2.13.13
         version: 2.13.13(graphql@16.6.0)
       '@tanstack/react-query':
         specifier: ^4.20.4
         version: 4.20.4(react-dom@18.2.0)(react@18.2.0)
-      '@wundergraph/nextjs':
-        specifier: workspace:*
-        version: link:../../packages/nextjs
-      '@wundergraph/react-query':
-        specifier: workspace:*
-        version: link:../../packages/react-query
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../../packages/sdk
-      '@wundergraph/swr':
-        specifier: workspace:*
-        version: link:../../packages/swr
       next:
         specifier: ^14.0.1
         version: 14.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -1456,13 +1456,13 @@ importers:
 
   testapps/nextjs-integrations:
     dependencies:
-      '@wundergraph/nextjs':
+      '@bff-backup/nextjs':
         specifier: workspace:*
         version: link:../../packages/nextjs
-      '@wundergraph/sdk':
+      '@bff-backup/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@wundergraph/swr':
+      '@bff-backup/swr':
         specifier: workspace:*
         version: link:../../packages/swr
       next:
@@ -1508,27 +1508,27 @@ importers:
 
   testapps/nextjs-relay:
     dependencies:
+      '@bff-backup/nextjs':
+        specifier: workspace:*
+        version: link:../../packages/nextjs
+      '@bff-backup/react-query':
+        specifier: workspace:*
+        version: link:../../packages/react-query
+      '@bff-backup/react-relay':
+        specifier: workspace:*
+        version: link:../../packages/react-relay
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../../packages/sdk
+      '@bff-backup/swr':
+        specifier: workspace:*
+        version: link:../../packages/swr
       '@graphql-yoga/node':
         specifier: ^2.13.13
         version: 2.13.13(graphql@16.6.0)
       '@tanstack/react-query':
         specifier: ^4.20.4
         version: 4.20.4(react-dom@18.2.0)(react@18.2.0)
-      '@wundergraph/nextjs':
-        specifier: workspace:*
-        version: link:../../packages/nextjs
-      '@wundergraph/react-query':
-        specifier: workspace:*
-        version: link:../../packages/react-query
-      '@wundergraph/react-relay':
-        specifier: workspace:*
-        version: link:../../packages/react-relay
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../../packages/sdk
-      '@wundergraph/swr':
-        specifier: workspace:*
-        version: link:../../packages/swr
       next:
         specifier: ^14.0.1
         version: 14.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -1590,12 +1590,12 @@ importers:
 
   testapps/postgres:
     dependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: file:packages/sdk
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: file:packages/sdk
       graphql:
         specifier: ^16.3.0
         version: 16.6.0
@@ -1603,17 +1603,17 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
     dependenciesMeta:
-      '@wundergraph/sdk':
+      '@bff-backup/sdk':
         injected: true
 
   testapps/rust:
     dependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../../packages/sdk
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.16
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../../packages/sdk
       graphql:
         specifier: ^16.3.0
         version: 16.6.0
@@ -1621,18 +1621,18 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
     devDependencies:
-      '@wundergraph/rust-client':
+      '@bff-backup/rust-client':
         specifier: workspace:^
         version: link:../../packages/rust-client
 
   testapps/simple:
     dependencies:
+      '@bff-backup/sdk':
+        specifier: workspace:*
+        version: link:../../packages/sdk
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
-      '@wundergraph/sdk':
-        specifier: workspace:*
-        version: link:../../packages/sdk
       graphql:
         specifier: ^16.3.0
         version: 16.6.0
@@ -1642,10 +1642,10 @@ importers:
 
   testapps/vite:
     dependencies:
-      '@wundergraph/sdk':
+      '@bff-backup/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@wundergraph/swr':
+      '@bff-backup/swr':
         specifier: workspace:*
         version: link:../../packages/swr
       react:
@@ -6035,7 +6035,7 @@ packages:
       '@graphql-mesh/types': 0.96.0(@graphql-mesh/store@0.96.0)(@graphql-tools/utils@9.2.1)(graphql@16.6.0)(tslib@2.6.2)
       '@graphql-tools/delegate': 10.0.3(graphql@16.6.0)
       '@graphql-tools/utils': 9.2.1(graphql@16.6.0)
-      '@whatwg-node/fetch': 0.9.13
+      '@whatwg-node/fetch': 0.9.14
       dset: 3.1.3
       graphql: 16.6.0
       js-yaml: 4.1.0
@@ -8083,7 +8083,7 @@ packages:
       '@graphql-mesh/utils': 0.96.0(@graphql-mesh/cross-helpers@0.4.1)(@graphql-mesh/types@0.96.0)(@graphql-tools/utils@9.2.1)(graphql@16.6.0)(tslib@2.6.2)
       '@graphql-tools/utils': 9.2.1(graphql@16.6.0)
       '@json-schema-tools/meta-schema': 1.7.0
-      '@whatwg-node/fetch': 0.9.13
+      '@whatwg-node/fetch': 0.9.14
       ajv: 8.12.0
       ajv-formats: 2.1.1(ajv@8.12.0)
       dset: 3.1.3
@@ -28958,10 +28958,13 @@ packages:
 
   file:packages/sdk:
     resolution: {directory: packages/sdk, type: directory}
-    name: '@wundergraph/sdk'
+    name: '@bff-backup/sdk'
     hasBin: true
     requiresBuild: true
     dependencies:
+      '@bff-backup/orm': link:packages/orm
+      '@bff-backup/protobuf': link:packages/protobuf
+      '@bff-backup/wunderctl': link:packages/wunderctl
       '@fastify/formbody': 7.4.0
       '@fastify/multipart': 7.7.3
       '@graphql-mesh/cross-helpers': 0.4.1(@graphql-tools/utils@9.2.1)(graphql@16.6.0)
@@ -28983,10 +28986,7 @@ packages:
       '@opentelemetry/semantic-conventions': 1.17.1
       '@prisma/generator-helper': 3.15.2
       '@whatwg-node/fetch': 0.9.14
-      '@wundergraph/orm': link:packages/orm
-      '@wundergraph/protobuf': link:packages/protobuf
       '@wundergraph/straightforward': 4.2.5
-      '@wundergraph/wunderctl': link:packages/wunderctl
       axios: 0.26.1(debug@4.3.4)
       axios-retry: 3.8.1
       close-with-grace: 1.2.0

@@ -6,8 +6,8 @@ import {
 	QueryFunctionContext,
 } from '@tanstack/react-query';
 
-import { OperationsDefinition, LogoutOptions, Client } from '@wundergraph/sdk/client';
-import { serialize } from '@wundergraph/sdk/internal';
+import { OperationsDefinition, LogoutOptions, Client } from '@bff-backup/sdk/client';
+import { serialize } from '@bff-backup/sdk/internal';
 import {
 	QueryFetcher,
 	MutationFetcher,

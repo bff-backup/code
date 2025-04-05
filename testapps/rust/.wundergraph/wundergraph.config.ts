@@ -1,4 +1,4 @@
-import { configureWunderGraphApplication, introspect } from '@wundergraph/sdk';
+import { configureWunderGraphApplication, introspect } from '@bff-backup/sdk';
 import server from './wundergraph.server';
 import operations from './wundergraph.operations';
 import generate from './wundergraph.generate';

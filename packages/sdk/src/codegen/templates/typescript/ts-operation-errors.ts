@@ -5,7 +5,7 @@ import { formatTypeScript } from './index';
 import { template } from './ts-operation-errors.template';
 import { uniqBy, filter } from 'lodash';
 import { TypeScriptOperation } from '../../../graphql/operations';
-import { OperationExecutionEngine } from '@wundergraph/protobuf';
+import { OperationExecutionEngine } from '@bff-backup/protobuf';
 import { stringToCamelCase } from '../../../strings';
 
 type OpTemplateError = {

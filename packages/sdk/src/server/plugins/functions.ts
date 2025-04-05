@@ -1,6 +1,6 @@
 import { FastifyPluginAsync } from 'fastify';
 import path from 'path';
-import type { ORM } from '@wundergraph/orm';
+import type { ORM } from '@bff-backup/orm';
 
 import type { TypeScriptOperationFile } from '../../graphql/operations';
 import type { NodeJSOperation } from '../../operations';

@@ -9,7 +9,7 @@ import {
 	UploadRequestOptions,
 	UploadRequestOptionsWithProfile,
 	WithInput,
-} from '@wundergraph/sdk/client';
+} from '@bff-backup/sdk/client';
 
 import {
 	CreateQueryOptions as CreateTanstackQueryOptions,
@@ -19,7 +19,7 @@ import {
 	MutateOptions,
 	QueryClient,
 } from '@tanstack/solid-query';
-import { ResponseError } from '@wundergraph/sdk/client';
+import { ResponseError } from '@bff-backup/sdk/client';
 import { Context } from 'solid-js';
 
 export type QueryFetcher<Operations extends OperationsDefinition> = {

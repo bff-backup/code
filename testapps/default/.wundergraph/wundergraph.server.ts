@@ -1,4 +1,4 @@
-import { configureWunderGraphServer, GithubWebhookVerifier, EnvironmentVariable } from '@wundergraph/sdk/server';
+import { configureWunderGraphServer, GithubWebhookVerifier, EnvironmentVariable } from '@bff-backup/sdk/server';
 import type { GraphQLExecutionContext } from './generated/wundergraph.server';
 import {
 	buildSchema,

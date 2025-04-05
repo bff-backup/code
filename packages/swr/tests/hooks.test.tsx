@@ -2,13 +2,13 @@ import { act, waitFor, screen, render } from '@testing-library/react';
 import React from 'react';
 import { SWRConfig, unstable_serialize } from 'swr';
 
-import { Client, ClientConfig } from '@wundergraph/sdk/client';
+import { Client, ClientConfig } from '@bff-backup/sdk/client';
 import nock from 'nock';
 import fetch from 'node-fetch';
 
 import { createHooks } from '../src';
-import { InputValidationError } from '@wundergraph/sdk/client';
-import { serialize } from '@wundergraph/sdk/internal';
+import { InputValidationError } from '@bff-backup/sdk/client';
+import { serialize } from '@bff-backup/sdk/internal';
 
 export function sleep(time: number) {
 	return new Promise<void>((resolve) => setTimeout(resolve, time));

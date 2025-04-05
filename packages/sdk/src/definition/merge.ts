@@ -12,12 +12,7 @@ import {
 	visit,
 } from 'graphql';
 import { mergeSchemas } from '@graphql-tools/schema';
-import {
-	ConfigurationVariableKind,
-	DataSourceKind,
-	FieldConfiguration,
-	TypeConfiguration,
-} from '@wundergraph/protobuf';
+import { ConfigurationVariableKind, DataSourceKind, FieldConfiguration, TypeConfiguration } from '@bff-backup/protobuf';
 import { Api, DataSource, StaticApiCustom } from './index';
 import { WellKnownClaim, WellKnownClaimValues } from '../graphql/operations';
 import { printSchemaWithDirectives } from '@graphql-tools/utils';

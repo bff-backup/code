@@ -1,4 +1,4 @@
-import { createHooks } from '@wundergraph/react-query';
+import { createHooks } from '@bff-backup/react-query';
 import { createClient, Operations } from '../components/generated/client';
 const client = createClient(); // Typesafe WunderGraph client
 

@@ -1,6 +1,6 @@
 import execa from 'execa';
 import { join } from 'node:path';
-import { wunderctlBinaryPath } from '@wundergraph/wunderctl';
+import { wunderctlBinaryPath } from '@bff-backup/wunderctl';
 
 export interface BuildOptions {
 	env?: Record<string, string>;

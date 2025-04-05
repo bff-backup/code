@@ -1,6 +1,6 @@
-import type { WunderGraphConfig } from '@wundergraph/sdk';
-import { graphql } from '@wundergraph/sdk/datasources';
-import { dynamicTransport } from '@wundergraph/sdk/advanced-hooks';
+import type { WunderGraphConfig } from '@bff-backup/sdk';
+import { graphql } from '@bff-backup/sdk/datasources';
+import { dynamicTransport } from '@bff-backup/sdk/advanced-hooks';
 
 import { weather } from './weather-datasource';
 

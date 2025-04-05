@@ -1,5 +1,5 @@
 {
-  "name": "wundergraph-nextjs",
+  "name": "undergraph-nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,8 +12,8 @@
     "check": "tsc --noEmit"
   },
   "dependencies": {
-    "@wundergraph/nextjs": "workspace:*",
-    "@wundergraph/sdk": "workspace:*",
+    "@bff-backup/nextjs": "workspace:*",
+    "@bff-backup/sdk": "workspace:*",
     "graphql": "^16.3.0",
     "jose": "^4.11.1",
     "next": "^14.0.1",

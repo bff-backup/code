@@ -1,6 +1,6 @@
 import { mergeApis } from './merge';
 import { Api, GraphQLApi, GraphQLApiCustom } from './index';
-import { ArgumentRenderConfiguration, ArgumentSource, DataSourceKind, HTTPMethod } from '@wundergraph/protobuf';
+import { ArgumentRenderConfiguration, ArgumentSource, DataSourceKind, HTTPMethod } from '@bff-backup/protobuf';
 import { mapInputVariable } from '../configure/variables';
 
 test('Should be merged', () => {

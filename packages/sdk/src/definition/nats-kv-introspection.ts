@@ -1,5 +1,5 @@
 import { Api, ApiIntrospectionOptions, DataSource, NatsKvApi, NatsKvApiCustom } from './index';
-import { ConfigurationVariableKind, DataSourceKind, FieldConfiguration, NatsKvOperation } from '@wundergraph/protobuf';
+import { ConfigurationVariableKind, DataSourceKind, FieldConfiguration, NatsKvOperation } from '@bff-backup/protobuf';
 import { z } from 'zod';
 import zodToJsonSchema from 'zod-to-json-schema';
 import { getGraphqlSchemaFromJsonSchema } from 'get-graphql-from-jsonschema';

@@ -1,7 +1,7 @@
 import { wunderctl } from '../wunderctlexec';
 import { FieldDefinitionNode, InputValueDefinitionNode, Kind, parse, parseType, print, TypeNode, visit } from 'graphql';
 import { DatabaseIntrospection } from '../definition';
-import { SingleTypeField } from '@wundergraph/protobuf';
+import { SingleTypeField } from '@bff-backup/protobuf';
 import { DMMF } from '@prisma/generator-helper';
 import { NamedTypeNode, ObjectTypeDefinitionNode } from 'graphql/language/ast';
 import { startCase } from 'lodash';

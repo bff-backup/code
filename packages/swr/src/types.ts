@@ -5,11 +5,11 @@ import {
 	OperationsDefinition,
 	SubscriptionRequestOptions,
 	UploadRequestOptions,
-} from '@wundergraph/sdk/client';
+} from '@bff-backup/sdk/client';
 import { Key, SWRConfiguration, SWRResponse } from 'swr';
 import { SWRMutationConfiguration, SWRMutationResponse } from 'swr/mutation';
-import { ResponseError } from '@wundergraph/sdk/client';
-import type { WithInput, ExtractProfileName, ExtractMeta } from '@wundergraph/sdk/client';
+import { ResponseError } from '@bff-backup/sdk/client';
+import type { WithInput, ExtractProfileName, ExtractMeta } from '@bff-backup/sdk/client';
 
 export type QueryFetcher<Operations extends OperationsDefinition> = {
 	<

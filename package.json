@@ -1,17 +1,17 @@
 {
   "private": true,
   "version": "0.180.0",
-  "name": "wundergraph",
+  "name": "bff-backup",
   "license": "Apache-2.0",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "repository": {
     "type": "https",
-    "url": "https://github.com/wundergraph/wundergraph"
+    "url": "https://github.com/bff-backup/code"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "scripts": {
     "build": "pnpm -r run --filter='!@test/postgres' --filter='!@test/mtls' --filter='!@test/vite' --filter='!./docs-website' build",
     "build:libs": "pnpm -r run --filter='./packages/*' --filter='!./docs-website' build",

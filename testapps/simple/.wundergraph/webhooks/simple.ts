@@ -1,6 +1,6 @@
 import { createWebhook } from '../generated/wundergraph.webhooks';
 
-import { WebhookHttpEvent, WebhookHttpResponse } from '@wundergraph/sdk/server';
+import { WebhookHttpEvent, WebhookHttpResponse } from '@bff-backup/sdk/server';
 
 export default createWebhook<WebhookHttpEvent<any>, WebhookHttpResponse<{ type: string }>>({
 	handler: async (event, ctx) => {

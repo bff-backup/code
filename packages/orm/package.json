@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/orm",
+  "name": "@bff-backup/orm",
   "version": "0.3.1",
   "license": "Apache-2.0",
-  "description": "WunderGraph ORM",
+  "description": "BFF Backup ORM",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
   "exports": {
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/bff-backup/code.git"
   },
   "dependencies": {
     "@graphql-tools/utils": "^9.2.1",
@@ -63,13 +63,13 @@
     "tsd": "^0.24.1",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "keywords": [
-    "wundergraph",
+    "bff-backup",
     "orm",
     "graphql"
   ],

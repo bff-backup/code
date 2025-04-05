@@ -1,4 +1,4 @@
-import { ConfigurationVariable, LogLevel, logLevelFromJSON } from '@wundergraph/protobuf';
+import { ConfigurationVariable, LogLevel, logLevelFromJSON } from '@bff-backup/protobuf';
 import { resolveConfigurationVariable } from '../configure/variables';
 import { DestinationStream, pino } from 'pino';
 import { pinoOptions } from '../server/logger';
@@ -65,9 +65,9 @@ if (process.env.WG_CLOUD_DEPLOYMENT_ID) {
 	cloudBindings.deploymentID = process.env.WG_CLOUD_DEPLOYMENT_ID;
 }
 
-export const Logger = logger.child({ component: '@wundergraph/sdk' });
+export const Logger = logger.child({ component: '@bff-backup/sdk' });
 export const ServerLogger = logger.child(
-	{ component: '@wundergraph/server', ...cloudBindings },
+	{ component: '@bff-backup/server', ...cloudBindings },
 	{ level: process.env.WG_DEBUG_MODE === 'true' ? PinoLogLevel.Debug : PinoLogLevel.Info }
 );
 
@@ -75,4 +75,4 @@ export default Logger;
 
 // This logger is used to log fatal errors to stderr
 // which is used by wunderctl to read errors in TUI mode.
-export const FatalLogger = initLogger(process.stderr).child({ component: '@wundergraph/sdk' });
+export const FatalLogger = initLogger(process.stderr).child({ component: '@bff-backup/sdk' });

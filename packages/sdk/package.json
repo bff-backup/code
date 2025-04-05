@@ -1,5 +1,5 @@
 {
-  "name": "@wundergraph/sdk",
+  "name": "@bff-backup/sdk",
   "version": "0.184.2",
   "license": "Apache-2.0",
   "exports": {
@@ -116,10 +116,10 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "description": "WunderGraph SDK",
+  "description": "BFF Backup SDK",
   "keywords": [
     "graphql",
-    "wundergraph",
+    "bff-backup",
     "integration",
     "openapi",
     "bff",
@@ -140,15 +140,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/bff-backup/code.git"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "bugs": {
-    "url": "https://github.com/wundergraph/wundergraph/issues"
+    "url": "https://github.com/bff-backup/code/issues"
   },
   "scripts": {
     "clean": "rimraf ./dist",
@@ -203,10 +203,10 @@
     "@opentelemetry/semantic-conventions": "^1.13.0",
     "@prisma/generator-helper": "^3.9.2",
     "@whatwg-node/fetch": "^0.9.13",
-    "@wundergraph/orm": "workspace:*",
-    "@wundergraph/protobuf": "workspace:^0.118.2",
+    "@bff-backup/orm": "workspace:*",
+    "@bff-backup/protobuf": "workspace:^0.118.2",
     "@wundergraph/straightforward": "^4.2.5",
-    "@wundergraph/wunderctl": "workspace:^0.180.0",
+    "@bff-backup/wunderctl": "workspace:^0.180.0",
     "axios": "^0.26.1",
     "axios-retry": "^3.3.1",
     "close-with-grace": "^1.1.0",

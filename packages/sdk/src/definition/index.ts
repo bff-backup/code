@@ -19,7 +19,7 @@ import {
 	TypeField,
 	UpstreamAuthentication,
 	UpstreamAuthenticationKind,
-} from '@wundergraph/protobuf';
+} from '@bff-backup/protobuf';
 import { applyNameSpaceToGraphQLSchema } from './namespacing';
 import { InputVariable, mapInputVariable } from '../configure/variables';
 import { introspectGraphqlWithCache } from './graphql-introspection';

@@ -2,7 +2,7 @@ import { afterAll, beforeAll, describe, expect, test } from 'vitest';
 
 import { createTestServer } from './.wundergraph/generated/testing';
 import { createOpenAPITestServer } from './test-server';
-import { getHttpResponseError, ResponseError } from '@wundergraph/sdk/client';
+import { getHttpResponseError, ResponseError } from '@bff-backup/sdk/client';
 
 const httpServer = createOpenAPITestServer(8090);
 const wg = createTestServer({

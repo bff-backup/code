@@ -2,7 +2,7 @@ import { act, waitFor, screen, render, fireEvent } from '@testing-library/react'
 import React from 'react';
 import { QueryCache, QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/react-query';
 
-import { Client, ClientConfig, OperationsDefinition, ResponseError } from '@wundergraph/sdk/client';
+import { Client, ClientConfig, OperationsDefinition, ResponseError } from '@bff-backup/sdk/client';
 import nock from 'nock';
 import fetch from 'node-fetch';
 

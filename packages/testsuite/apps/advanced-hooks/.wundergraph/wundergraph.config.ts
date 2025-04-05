@@ -1,7 +1,7 @@
-import type { WunderGraphConfig } from '@wundergraph/sdk';
-import { graphql } from '@wundergraph/sdk/datasources';
+import type { WunderGraphConfig } from '@bff-backup/sdk';
+import { graphql } from '@bff-backup/sdk/datasources';
 
-import { dynamicTransport, mergeGraphQLRequests } from '@wundergraph/sdk/advanced-hooks';
+import { dynamicTransport, mergeGraphQLRequests } from '@bff-backup/sdk/advanced-hooks';
 
 import { url1, url2, url3 } from './datasources';
 

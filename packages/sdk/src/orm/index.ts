@@ -1,3 +1,3 @@
-export * from '@wundergraph/orm';
+export * from '@bff-backup/orm';
 
 export * from './executor';

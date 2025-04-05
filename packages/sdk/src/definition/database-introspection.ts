@@ -27,7 +27,7 @@ import {
 	generateTypeConfigurationsForNamespace,
 } from './namespacing';
 import { mapInputVariable, resolveVariable } from '../configure/variables';
-import { DataSourceKind, FieldConfiguration, SingleTypeField, TypeConfiguration } from '@wundergraph/protobuf';
+import { DataSourceKind, FieldConfiguration, SingleTypeField, TypeConfiguration } from '@bff-backup/protobuf';
 import { fileHash, urlHash } from '../localcache';
 
 const introspectDatabase = async (

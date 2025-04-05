@@ -1,7 +1,7 @@
 import { waitFor, screen, render, fireEvent } from '@testing-library/vue';
 import { QueryCache, QueryClient, useQueryClient, VueQueryPlugin } from '@tanstack/vue-query';
 
-import { Client, ClientConfig, OperationsDefinition, ResponseError } from '@wundergraph/sdk/client';
+import { Client, ClientConfig, OperationsDefinition, ResponseError } from '@bff-backup/sdk/client';
 import nock from 'nock';
 import fetch from 'node-fetch';
 

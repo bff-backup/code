@@ -1,5 +1,5 @@
 import { GraphQLObjectType, GraphQLSchema, GraphQLString } from 'graphql';
-import { configureWunderGraphServer } from '@wundergraph/sdk/server';
+import { configureWunderGraphServer } from '@bff-backup/sdk/server';
 
 export default configureWunderGraphServer(() => ({
 	hooks: {

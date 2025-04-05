@@ -2,8 +2,8 @@
 
 //language=handlebars
 export const template = `
-import type { OperationsClient, InternalOperationsDefinition } from "@wundergraph/sdk/server";
-import type { ClientOperationErrors } from "@wundergraph/sdk/client";
+import type { OperationsClient, InternalOperationsDefinition } from "@bff-backup/sdk/server";
+import type { ClientOperationErrors } from "@bff-backup/sdk/client";
 import type { OperationErrors } from "./ts-operation-errors";
 import { {{ modelImports }} } from "./models"
 

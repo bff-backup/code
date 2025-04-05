@@ -1,7 +1,7 @@
 import { doNotEditHeader, Template, TemplateOutputFile } from '../../index';
 import { CodeGenerationConfig } from '../../../configure';
 import { formatTypeScript } from './index';
-import { OperationType } from '@wundergraph/protobuf';
+import { OperationType } from '@bff-backup/protobuf';
 import Handlebars from 'handlebars';
 import { template } from './forms.tsx.template';
 import { hasInput, isNotInternal } from './helpers';

@@ -1,7 +1,7 @@
 //language=handlebars
 export const template = `
 import type { {{ modelImports }} } from "./models";
-import type { RequestOptions, UserListener, Response } from "@wundergraph/sdk/server";
+import type { RequestOptions, UserListener, Response } from "@bff-backup/sdk/server";
 import type { User, Role } from "./wundergraph.server";
 import {
 	Client as WunderGraphClient,
@@ -9,7 +9,7 @@ import {
 	UploadRequestOptions,
 	ClientResponse as Result,
   LogoutOptions
-} from "@wundergraph/sdk/client";
+} from "@bff-backup/sdk/client";
 export const WUNDERGRAPH_S3_ENABLED = {{hasS3Providers}};
 export const WUNDERGRAPH_AUTH_ENABLED = {{hasAuthProviders}};
 {{#if hasS3Providers}}

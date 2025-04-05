@@ -1,4 +1,4 @@
-import { defineIntegration } from '@wundergraph/sdk/integrations';
+import { defineIntegration } from '@bff-backup/sdk/integrations';
 
 export interface NextJsIntegrationOptions {
 	/**

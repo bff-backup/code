@@ -5,8 +5,8 @@ import {
 	QueryFunctionContext,
 } from '@tanstack/solid-query';
 
-import { OperationsDefinition, LogoutOptions, Client, UploadRequestOptions } from '@wundergraph/sdk/client';
-import { serialize } from '@wundergraph/sdk/internal';
+import { OperationsDefinition, LogoutOptions, Client, UploadRequestOptions } from '@bff-backup/sdk/client';
+import { serialize } from '@bff-backup/sdk/internal';
 import { createEffect, mergeProps, onCleanup, splitProps } from 'solid-js';
 import { createStore } from 'solid-js/store';
 import {

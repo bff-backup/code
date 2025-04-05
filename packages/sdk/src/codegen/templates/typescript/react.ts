@@ -3,14 +3,14 @@ import { CodeGenerationConfig, ResolvedApplication } from '../../../configure';
 import { formatTypeScript } from './index';
 import Handlebars from 'handlebars';
 import { GraphQLOperation } from '../../../graphql/operations';
-import { OperationType } from '@wundergraph/protobuf';
+import { OperationType } from '@bff-backup/protobuf';
 import { template as providerTemplate } from './react.provider.template';
 import { template as reactNativeProviderTemplate } from './react.native.provider.template';
 import { template as hooksTemplate } from './react.hooks.template';
 import { hasInput, isNotInternal, queries as allQueries } from './helpers';
 
 /**
- * @deprecated Use @wundergraph/swr instead
+ * @deprecated Use @bff-backup/swr instead
  */
 export class TypescriptReactProvider implements Template {
 	generate(generationConfig: CodeGenerationConfig): Promise<TemplateOutputFile[]> {
@@ -31,7 +31,7 @@ export class TypescriptReactProvider implements Template {
 }
 
 /**
- * @deprecated Use @wundergraph/swr instead
+ * @deprecated Use @bff-backup/swr instead
  */
 export class TypescriptReactNativeProvider implements Template {
 	generate(generationConfig: CodeGenerationConfig): Promise<TemplateOutputFile[]> {
@@ -52,7 +52,7 @@ export class TypescriptReactNativeProvider implements Template {
 }
 
 /**
- * @deprecated Use @wundergraph/swr instead
+ * @deprecated Use @bff-backup/swr instead
  */
 export class TypescriptReactHooks implements Template {
 	constructor(reactNative?: boolean) {

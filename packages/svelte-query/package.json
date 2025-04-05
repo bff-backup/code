@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/svelte-query",
+  "name": "@bff-backup/svelte-query",
   "version": "0.3.33",
   "license": "Apache-2.0",
-  "description": "WunderGraph Svelte Query Integration",
+  "description": "BFF Backup Svelte Query Integration",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -27,11 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/bff-backup/code.git"
   },
   "peerDependencies": {
     "@tanstack/svelte-query": "^4.29.1",
-    "@wundergraph/sdk": ">=0.143.0",
+    "@bff-backup/sdk": ">=0.143.0",
     "svelte": ">=3 <5"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "@testing-library/svelte": "^3.2.2",
     "@types/jest": "^28.1.1",
     "@types/node-fetch": "2.6.2",
-    "@wundergraph/sdk": "workspace:*",
+    "@bff-backup/sdk": "workspace:*",
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.6.1",
     "nock": "^13.2.9",
@@ -53,14 +53,14 @@
     "tsd": "^0.24.1",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "keywords": [
     "svelte-query",
-    "wundergraph",
+    "bff-backup",
     "svelte"
   ]
 }

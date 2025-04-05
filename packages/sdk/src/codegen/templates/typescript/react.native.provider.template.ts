@@ -1,7 +1,7 @@
 //language=handlebars
 export const template = `
-import type { UserListener } from "@wundergraph/sdk";
-import type { OperationMetadata } from "@wundergraph/sdk/client";
+import type { UserListener } from "@bff-backup/sdk";
+import type { OperationMetadata } from "@bff-backup/sdk/client";
 import { Client } from "./wundergraph.client";
 import type { User } from "./wundergraph.server";
 import React, { createContext, FunctionComponent, useMemo, useEffect, useState, Dispatch, SetStateAction } from "react";
@@ -40,7 +40,7 @@ export interface Props {
 }
 
 /**
- * @deprecated Use @wundergraph/swr instead
+ * @deprecated Use @bff-backup/swr instead
  */
 export const WunderGraphProvider: FunctionComponent<Props> = ({
     endpoint = 'http://10.0.2.2:9991',

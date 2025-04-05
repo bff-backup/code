@@ -1,4 +1,4 @@
-import type { WebhookHttpEvent, WebhookHttpResponse } from '@wundergraph/sdk/server';
+import type { WebhookHttpEvent, WebhookHttpResponse } from '@bff-backup/sdk/server';
 import { createWebhook } from '../generated/wundergraph.webhooks';
 
 const webhook = createWebhook<WebhookHttpEvent, WebhookHttpResponse>({

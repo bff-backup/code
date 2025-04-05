@@ -2,7 +2,7 @@ import { Template, TemplateOutputFile } from '../../index';
 import { CodeGenerationConfig, ResolvedApplication } from '../../../configure';
 import Handlebars from 'handlebars';
 import { formatTypeScript } from './index';
-import { OperationType } from '@wundergraph/protobuf';
+import { OperationType } from '@bff-backup/protobuf';
 import { template } from './web.client.template';
 import { configurationHash, hasInput, hasInternalInput, modelImports } from './helpers';
 

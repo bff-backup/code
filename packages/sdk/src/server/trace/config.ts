@@ -1,4 +1,4 @@
-import { TelemetryOptions } from '@wundergraph/protobuf';
+import { TelemetryOptions } from '@bff-backup/protobuf';
 import { TracerConfig } from '../types';
 import { resolveConfigurationVariable } from '../../configure/variables';
 

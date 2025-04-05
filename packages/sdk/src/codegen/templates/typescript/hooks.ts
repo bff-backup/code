@@ -2,7 +2,7 @@ import { doNotEditHeader, Template, TemplateOutputFile } from '../../index';
 import { CodeGenerationConfig } from '../../../configure';
 import Handlebars from 'handlebars';
 import { formatTypeScript } from './index';
-import { OperationType } from '@wundergraph/protobuf';
+import { OperationType } from '@bff-backup/protobuf';
 import { filterNodeJSOperations, modelImports, operations } from './helpers';
 import { template } from './hooks.template';
 import templates from '../index';

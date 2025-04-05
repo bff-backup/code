@@ -4,15 +4,15 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/bff-backup/code.git"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "bugs": {
-    "url": "https://github.com/wundergraph/wundergraph/issues"
+    "url": "https://github.com/bff-backup/code/issues"
   },
   "scripts": {
     "dev": "wunderctl up",
@@ -26,8 +26,8 @@
   "dependencies": {
     "@octokit/webhooks-types": "^6.10.0",
     "@types/node": "^18.16.0",
-    "@wundergraph/golang-client": "workspace:*",
-    "@wundergraph/sdk": "workspace:*",
+    "@bff-backup/golang-client": "workspace:*",
+    "@bff-backup/sdk": "workspace:*",
     "graphql": "^16.3.0",
     "openai": "^3.3.0",
     "pg": "^8.7.3",

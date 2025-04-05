@@ -107,7 +107,7 @@ import type { InternalOperationsClient } from "./wundergraph.internal.operations
 import type { ORM } from './orm'
 import type { Role } from "./wundergraph.server";
 import type { CustomClaims } from "./claims";
-import { createOperationFactory } from "@wundergraph/sdk/operations";
+import { createOperationFactory } from "@bff-backup/sdk/operations";
 
 {{ if .HasWunderGraphServerTs }}
 import type server from '../wundergraph.server';
@@ -120,11 +120,11 @@ export type ContextType = never;
 {{ end }}
 
 import type { Queries, Mutations } from "./jsonschema";
-import type { IOpenaiAgentFactory } from "@wundergraph/sdk/openai"
+import type { IOpenaiAgentFactory } from "@bff-backup/sdk/openai"
 export type QueriesAndMutations = Queries & Mutations;
 export type OpenApiAgentFactory = IOpenaiAgentFactory<QueriesAndMutations>;
 
-export { z, AuthorizationError } from "@wundergraph/sdk/operations";
+export { z, AuthorizationError } from "@bff-backup/sdk/operations";
 export const createOperation = createOperationFactory<Role, CustomClaims, InternalOperationsClient, ORM, OpenApiAgentFactory, ContextType>();`,
 	))
 )

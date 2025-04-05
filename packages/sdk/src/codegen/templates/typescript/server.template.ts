@@ -11,7 +11,7 @@ import type {
 	WunderGraphUser,
 	WunderGraphServerConfig,
 	WunderGraphHooksAndServerConfig
-} from "@wundergraph/sdk/server";
+} from "@bff-backup/sdk/server";
 
 export type Role = {{{ roleDefinitions }}};
 
@@ -31,7 +31,7 @@ export interface GraphQLExecutionContext {
     wundergraph: BaseRequestContext<User, InternalOperationsClient, RequestContext>;
 }
 
-declare module "@wundergraph/sdk/server" {
+declare module "@bff-backup/sdk/server" {
 	export function configureWunderGraphServer(
 		configWrapper: () => WunderGraphServerConfig<
 			HooksConfig<RequestContext>,

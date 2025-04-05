@@ -17,7 +17,7 @@ import {
 } from 'graphql';
 import { AxiosError, AxiosProxyConfig, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { HttpsProxyAgent, HttpsProxyAgentOptions } from 'https-proxy-agent';
-import { ConfigurationVariableKind, DataSourceKind, HTTPHeader, HTTPMethod } from '@wundergraph/protobuf';
+import { ConfigurationVariableKind, DataSourceKind, HTTPHeader, HTTPMethod } from '@bff-backup/protobuf';
 import { cleanupSchema } from '../graphql/schema';
 import {
 	applyNameSpaceToCustomJsonScalars,

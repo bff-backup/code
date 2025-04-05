@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/metro-config",
+  "name": "@bff-backup/metro-config",
   "version": "0.0.1",
   "license": "Apache-2.0",
-  "description": "WunderGraph Metro Config for React Native and Expo",
+  "description": "BFF Backup Metro Config for React Native and Expo",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/bff-backup/code.git"
   },
   "dependencies": {
     "event-source-polyfill": "^1.0.31",
@@ -32,14 +32,14 @@
     "tsup": "^6.7.0",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "keywords": [
     "expo",
-    "wundergraph",
+    "bff-backup",
     "react-native",
     "metro-config"
   ]

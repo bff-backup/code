@@ -1,7 +1,7 @@
 import { configuration, GraphQLConfiguration } from './configuration';
 import { assert } from 'chai';
 import { parse } from 'graphql';
-import { ArgumentRenderConfiguration, ArgumentSource } from '@wundergraph/protobuf';
+import { ArgumentRenderConfiguration, ArgumentSource } from '@bff-backup/protobuf';
 import { ArgumentReplacement } from '../transformations/transformSchema';
 
 const tests: {

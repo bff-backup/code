@@ -1,6 +1,6 @@
 import execa from 'execa';
 import fs from 'fs';
-import { wunderctlBinaryPath } from '@wundergraph/wunderctl';
+import { wunderctlBinaryPath } from '@bff-backup/wunderctl';
 
 export interface WunderCtlExecArgs {
 	cmd: string[];

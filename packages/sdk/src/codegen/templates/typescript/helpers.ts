@@ -3,7 +3,7 @@ import crypto from 'crypto';
 
 import type { GraphQLOperation } from '../../../graphql/operations';
 import type { ResolvedApplication, ResolvedWunderGraphConfig } from '../../../configure';
-import { OperationExecutionEngine, OperationType } from '@wundergraph/protobuf';
+import { OperationExecutionEngine, OperationType } from '@bff-backup/protobuf';
 import { deepClone } from '../../../utils/helper';
 
 export const isNotInternal = (op: GraphQLOperation): boolean => !op.Internal;

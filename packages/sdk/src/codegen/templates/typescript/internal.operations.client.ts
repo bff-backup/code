@@ -1,5 +1,5 @@
 import Handlebars from 'handlebars';
-import { OperationType } from '@wundergraph/protobuf';
+import { OperationType } from '@bff-backup/protobuf';
 import { doNotEditHeader, Template, TemplateOutputFile } from '../../index';
 import { CodeGenerationConfig } from '../../../configure';
 import { formatTypeScript } from './index';

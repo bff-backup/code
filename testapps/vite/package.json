@@ -15,8 +15,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@wundergraph/sdk": "workspace:*",
-    "@wundergraph/swr": "workspace:*",
+    "@bff-backup/sdk": "workspace:*",
+    "@bff-backup/swr": "workspace:*",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "swr": "^2.2.0"

@@ -12,7 +12,7 @@ import type {
     SubscriptionConfiguration,
     MutationConfiguration,
     WunderGraphOperationsConfig
-} from "@wundergraph/sdk"
+} from "@bff-backup/sdk"
 
 export interface OperationsConfiguration {
     // defaultConfig is the base for all configurations
@@ -35,7 +35,7 @@ export interface OperationsConfiguration {
     }
 }
 
-declare module "@wundergraph/sdk" {
+declare module "@bff-backup/sdk" {
     interface CustomOperationsConfiguration {
         {{#each operations}}
         "{{name}}"?: Partial<{{#if isQuery}}QueryConfiguration{{/if}}{{#if isMutation}}MutationConfiguration{{/if}}{{#if isSubscription}}SubscriptionConfiguration{{/if}}>;

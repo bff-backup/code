@@ -1,8 +1,8 @@
 import useSWR, { useSWRConfig } from 'swr';
 import useSWRMutation from 'swr/mutation';
 
-import { OperationsDefinition, LogoutOptions, Client, ResponseError } from '@wundergraph/sdk/client';
-import { serialize } from '@wundergraph/sdk/internal';
+import { OperationsDefinition, LogoutOptions, Client, ResponseError } from '@bff-backup/sdk/client';
+import { serialize } from '@bff-backup/sdk/internal';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import {
 	QueryFetcher,

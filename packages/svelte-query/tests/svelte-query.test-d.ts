@@ -1,6 +1,6 @@
 import { createSvelteClient } from '../src/lib';
-import { Client } from '@wundergraph/sdk/client';
-import type { ResponseError, OperationsDefinition, User } from '@wundergraph/sdk/client';
+import { Client } from '@bff-backup/sdk/client';
+import type { ResponseError, OperationsDefinition, User } from '@bff-backup/sdk/client';
 import { expectType } from 'tsd';
 import { get } from 'svelte/store';
 import type { CreateQueryResult } from '@tanstack/svelte-query';

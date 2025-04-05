@@ -1,4 +1,4 @@
-import { OperationError } from '@wundergraph/sdk/operations';
+import { OperationError } from '@bff-backup/sdk/operations';
 
 export class NotFoundErr extends OperationError {
 	statusCode = 404;

@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/wunderctl",
+  "name": "@bff-backup/wunderctl",
   "version": "0.180.0",
   "license": "Apache-2.0",
-  "description": "WunderGraph Command Line Interface",
+  "description": "BFF Backup Command Line Interface",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -24,15 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/bff-backup/code.git"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://codeconfab.com",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "Code Confab",
+    "email": "lar+bff-backup@codeconfab.com"
   },
   "bugs": {
-    "url": "https://github.com/wundergraph/wundergraph/issues"
+    "url": "https://github.com/bff-backup/code/issues"
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",

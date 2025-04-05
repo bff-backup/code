@@ -3,7 +3,7 @@ import { CodeGenerationConfig } from '../../../configure';
 import { formatTypeScript } from './index';
 import Handlebars from 'handlebars';
 import { template } from './jsonschema.template';
-import { OperationType, operationTypeToJSON } from '@wundergraph/protobuf';
+import { OperationType, operationTypeToJSON } from '@bff-backup/protobuf';
 import { GraphQLOperation } from '../../../graphql/operations';
 
 export class JsonSchema implements Template {
