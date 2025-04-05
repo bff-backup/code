@@ -1,10 +1,10 @@
 //language=handlebars
 export const template = `
-import type { WebhookConfiguration } from '@wundergraph/sdk/server';
+import type { WebhookConfiguration } from '@undergraph-dev/sdk/server';
 import type { InternalOperationsClient } from "./wundergraph.internal.operations.client";
 import type { ContextType } from "./wundergraph.factory";
 
-import { createWebhookFactory } from "@wundergraph/sdk/server";
+import { createWebhookFactory } from "@undergraph-dev/sdk/server";
 import type { ORM as TypedORM } from "./orm";
 
 export type WebhooksConfig = {

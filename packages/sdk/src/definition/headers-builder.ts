@@ -1,5 +1,5 @@
 import { EnvironmentVariable, InputVariable, PlaceHolder } from '../configure/variables';
-import { ConfigurationVariable, ConfigurationVariableKind, HTTPHeader } from '@wundergraph/protobuf';
+import { ConfigurationVariable, ConfigurationVariableKind, HTTPHeader } from '@undergraph-dev/protobuf';
 
 export interface HeaderConfiguration {
 	// key is the name of the Header that will be sent to the upstream, e.g. Authorization

@@ -1,5 +1,5 @@
 import { GraphQLEnumType, GraphQLList, GraphQLNonNull, GraphQLObjectType, GraphQLSchema, GraphQLString } from 'graphql';
-import { configureWunderGraphServer } from '@wundergraph/sdk/server';
+import { configureWunderGraphServer } from '@undergraph-dev/sdk/server';
 
 const testEnum = new GraphQLEnumType({
 	name: 'TestEnum',

@@ -1,4 +1,4 @@
-import type { Client, ClientResponse, ResponseError, SubscriptionRequestOptions } from '@wundergraph/sdk/client';
+import type { Client, ClientResponse, ResponseError, SubscriptionRequestOptions } from '@undergraph-dev/sdk/client';
 import {
 	useRelayEnvironment,
 	RelayEnvironmentProvider,

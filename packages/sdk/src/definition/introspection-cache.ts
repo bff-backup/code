@@ -15,7 +15,7 @@ import {
 
 import objectHash from 'object-hash';
 
-import { FieldConfiguration, TypeConfiguration } from '@wundergraph/protobuf';
+import { FieldConfiguration, TypeConfiguration } from '@undergraph-dev/protobuf';
 import { LocalCache, LocalCacheBucket } from '../localcache';
 import { Logger } from '../logger';
 import { onParentProcessExit } from '../utils/process';

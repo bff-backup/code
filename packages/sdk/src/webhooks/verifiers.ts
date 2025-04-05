@@ -1,4 +1,4 @@
-import { webhookVerifierKindFromJSON } from '@wundergraph/protobuf';
+import { webhookVerifierKindFromJSON } from '@undergraph-dev/protobuf';
 import { EnvironmentVariable } from '../configure/variables';
 
 export enum WebhookVerifierKind {

@@ -1,7 +1,7 @@
 import { CodeGenOutWriter, collectAllTemplates, CodeGenerator, Template, TemplateOutputFile } from './index';
 import { Api } from '../definition';
 import { CodeGenerationConfig } from '../configure';
-import { ConfigurationVariableKind, OperationExecutionEngine, OperationType } from '@wundergraph/protobuf';
+import { ConfigurationVariableKind, OperationExecutionEngine, OperationType } from '@undergraph-dev/protobuf';
 import { mapInputVariable } from '../configure/variables';
 
 class FakeTemplate implements Template {

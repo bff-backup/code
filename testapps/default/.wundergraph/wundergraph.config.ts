@@ -4,7 +4,7 @@ import {
 	cors,
 	EnvironmentVariable,
 	introspect,
-} from '@wundergraph/sdk';
+} from '@undergraph-dev/sdk';
 import server from './wundergraph.server';
 import operations from './wundergraph.operations';
 import generate from './wundergraph.generate';

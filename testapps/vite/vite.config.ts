@@ -5,14 +5,14 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
 	plugins: [react()],
 	optimizeDeps: {
-		include: ['@wundergraph/swr', '@wundergraph/sdk', '@wundergraph/sdk/client'],
+		include: ['@undergraph-dev/swr', '@undergraph-dev/sdk', '@undergraph-dev/sdk/client'],
 		esbuildOptions: {
 			target: 'es2020',
 		},
 	},
 	build: {
 		commonjsOptions: {
-			include: [/wundergraph/],
+			include: [/undergraph/],
 		},
 	},
 });

@@ -1,4 +1,4 @@
-import type { WebhookHttpEvent, WebhookHttpResponse } from '@wundergraph/sdk/server';
+import type { WebhookHttpEvent, WebhookHttpResponse } from '@undergraph-dev/sdk/server';
 import { createWebhook } from '../generated/wundergraph.webhooks';
 
 export default createWebhook<WebhookHttpEvent<{ country_code: string }>, WebhookHttpResponse<{ name: string }>>({

@@ -13,12 +13,12 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.16.0",
-    "@wundergraph/sdk": "workspace:*",
+    "@undergraph-dev/sdk": "workspace:*",
     "graphql": "^16.3.0",
     "typescript": "^5.1.6"
   },
   "dependenciesMeta": {
-    "@wundergraph/sdk": {
+    "@undergraph-dev/sdk": {
       "injected": true
     }
   },

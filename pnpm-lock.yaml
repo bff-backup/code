@@ -262,7 +262,7 @@ importers:
 
   packages/golang-client:
     dependencies:
-      '@wundergraph/protobuf':
+      '@undergraph-dev/protobuf':
         specifier: workspace:^0.118.2
         version: link:../protobuf
       execa:
@@ -293,7 +293,7 @@ importers:
       '@types/object-hash':
         specifier: ^1.3.4
         version: 1.3.4
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:^0.184.2
         version: link:../sdk
       typescript:
@@ -333,10 +333,10 @@ importers:
 
   packages/nextjs:
     dependencies:
-      '@wundergraph/protobuf':
+      '@undergraph-dev/protobuf':
         specifier: workspace:^0.118.2
         version: link:../protobuf
-      '@wundergraph/swr':
+      '@undergraph-dev/swr':
         specifier: workspace:*
         version: link:../swr
       handlebars:
@@ -370,7 +370,7 @@ importers:
       '@types/react':
         specifier: ^18.0.6
         version: 18.0.35
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
       jest:
@@ -507,7 +507,7 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.6
         version: 18.0.8
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
       jest:
@@ -565,7 +565,7 @@ importers:
       '@types/relay-runtime':
         specifier: ^14.1.10
         version: 14.1.10
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
       jest:
@@ -598,7 +598,7 @@ importers:
 
   packages/rust-client:
     dependencies:
-      '@wundergraph/protobuf':
+      '@undergraph-dev/protobuf':
         specifier: workspace:^0.118.2
         version: link:../protobuf
       execa:
@@ -629,7 +629,7 @@ importers:
       '@types/object-hash':
         specifier: ^1.3.4
         version: 1.3.4
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:^0.184.2
         version: link:../sdk
       typescript:
@@ -698,21 +698,21 @@ importers:
       '@prisma/generator-helper':
         specifier: ^3.9.2
         version: 3.15.2
+      '@undergraph-dev/orm':
+        specifier: workspace:*
+        version: link:../orm
+      '@undergraph-dev/protobuf':
+        specifier: workspace:^0.118.2
+        version: link:../protobuf
+      '@undergraph-dev/wunderctl':
+        specifier: workspace:^0.180.0
+        version: link:../wunderctl
       '@whatwg-node/fetch':
         specifier: ^0.9.13
         version: 0.9.13
-      '@wundergraph/orm':
-        specifier: workspace:*
-        version: link:../orm
-      '@wundergraph/protobuf':
-        specifier: workspace:^0.118.2
-        version: link:../protobuf
       '@wundergraph/straightforward':
         specifier: ^4.2.5
         version: 4.2.5
-      '@wundergraph/wunderctl':
-        specifier: workspace:^0.180.0
-        version: link:../wunderctl
       axios:
         specifier: ^0.26.1
         version: 0.26.1(debug@4.3.4)
@@ -930,7 +930,7 @@ importers:
       '@types/node-fetch':
         specifier: 2.6.2
         version: 2.6.2
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
       babel-jest:
@@ -996,7 +996,7 @@ importers:
       '@types/node-fetch':
         specifier: 2.6.2
         version: 2.6.2
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
       jest:
@@ -1054,7 +1054,7 @@ importers:
       '@types/react-dom':
         specifier: ^18.0.6
         version: 18.0.8
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
       jest:
@@ -1099,10 +1099,10 @@ importers:
       '@opentelemetry/otlp-transformer':
         specifier: ^0.39.1
         version: 0.39.1(@opentelemetry/api@1.4.1)
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
-      '@wundergraph/wunderctl':
+      '@undergraph-dev/wunderctl':
         specifier: workspace:*
         version: link:../wunderctl
       graphql:
@@ -1118,7 +1118,7 @@ importers:
       '@prisma/client':
         specifier: ^4.15.0
         version: 4.15.0(prisma@4.15.0)
-      '@wundergraph/rust-client':
+      '@undergraph-dev/rust-client':
         specifier: workspace:^
         version: link:../rust-client
       execa:
@@ -1178,7 +1178,7 @@ importers:
       '@types/node-fetch':
         specifier: 2.6.2
         version: 2.6.2
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../sdk
       jest:
@@ -1248,10 +1248,10 @@ importers:
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
-      '@wundergraph/golang-client':
+      '@undergraph-dev/golang-client':
         specifier: workspace:*
         version: link:../../packages/golang-client
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
       graphql:
@@ -1294,13 +1294,13 @@ importers:
       '@rnx-kit/metro-resolver-symlinks':
         specifier: ^0.1.27
         version: 0.1.27
-      '@wundergraph/metro-config':
+      '@undergraph-dev/metro-config':
         specifier: workspace:*
         version: link:../../packages/metro-config
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@wundergraph/swr':
+      '@undergraph-dev/swr':
         specifier: workspace:*
         version: link:../../packages/swr
       expo:
@@ -1340,10 +1340,10 @@ importers:
 
   testapps/nextauth:
     dependencies:
-      '@wundergraph/nextjs':
+      '@undergraph-dev/nextjs':
         specifier: workspace:*
         version: link:../../packages/nextjs
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
       graphql:
@@ -1401,16 +1401,16 @@ importers:
       '@tanstack/react-query':
         specifier: ^4.20.4
         version: 4.20.4(react-dom@18.2.0)(react@18.2.0)
-      '@wundergraph/nextjs':
+      '@undergraph-dev/nextjs':
         specifier: workspace:*
         version: link:../../packages/nextjs
-      '@wundergraph/react-query':
+      '@undergraph-dev/react-query':
         specifier: workspace:*
         version: link:../../packages/react-query
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@wundergraph/swr':
+      '@undergraph-dev/swr':
         specifier: workspace:*
         version: link:../../packages/swr
       next:
@@ -1456,13 +1456,13 @@ importers:
 
   testapps/nextjs-integrations:
     dependencies:
-      '@wundergraph/nextjs':
+      '@undergraph-dev/nextjs':
         specifier: workspace:*
         version: link:../../packages/nextjs
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@wundergraph/swr':
+      '@undergraph-dev/swr':
         specifier: workspace:*
         version: link:../../packages/swr
       next:
@@ -1514,19 +1514,19 @@ importers:
       '@tanstack/react-query':
         specifier: ^4.20.4
         version: 4.20.4(react-dom@18.2.0)(react@18.2.0)
-      '@wundergraph/nextjs':
+      '@undergraph-dev/nextjs':
         specifier: workspace:*
         version: link:../../packages/nextjs
-      '@wundergraph/react-query':
+      '@undergraph-dev/react-query':
         specifier: workspace:*
         version: link:../../packages/react-query
-      '@wundergraph/react-relay':
+      '@undergraph-dev/react-relay':
         specifier: workspace:*
         version: link:../../packages/react-relay
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@wundergraph/swr':
+      '@undergraph-dev/swr':
         specifier: workspace:*
         version: link:../../packages/swr
       next:
@@ -1593,7 +1593,7 @@ importers:
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: file:packages/sdk
       graphql:
@@ -1603,7 +1603,7 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
     dependenciesMeta:
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         injected: true
 
   testapps/rust:
@@ -1611,7 +1611,7 @@ importers:
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.16
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
       graphql:
@@ -1621,7 +1621,7 @@ importers:
         specifier: ^5.1.6
         version: 5.1.6
     devDependencies:
-      '@wundergraph/rust-client':
+      '@undergraph-dev/rust-client':
         specifier: workspace:^
         version: link:../../packages/rust-client
 
@@ -1630,7 +1630,7 @@ importers:
       '@types/node':
         specifier: ^18.16.0
         version: 18.16.0
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
       graphql:
@@ -1642,10 +1642,10 @@ importers:
 
   testapps/vite:
     dependencies:
-      '@wundergraph/sdk':
+      '@undergraph-dev/sdk':
         specifier: workspace:*
         version: link:../../packages/sdk
-      '@wundergraph/swr':
+      '@undergraph-dev/swr':
         specifier: workspace:*
         version: link:../../packages/swr
       react:
@@ -6035,7 +6035,7 @@ packages:
       '@graphql-mesh/types': 0.96.0(@graphql-mesh/store@0.96.0)(@graphql-tools/utils@9.2.1)(graphql@16.6.0)(tslib@2.6.2)
       '@graphql-tools/delegate': 10.0.3(graphql@16.6.0)
       '@graphql-tools/utils': 9.2.1(graphql@16.6.0)
-      '@whatwg-node/fetch': 0.9.13
+      '@whatwg-node/fetch': 0.9.14
       dset: 3.1.3
       graphql: 16.6.0
       js-yaml: 4.1.0
@@ -8083,7 +8083,7 @@ packages:
       '@graphql-mesh/utils': 0.96.0(@graphql-mesh/cross-helpers@0.4.1)(@graphql-mesh/types@0.96.0)(@graphql-tools/utils@9.2.1)(graphql@16.6.0)(tslib@2.6.2)
       '@graphql-tools/utils': 9.2.1(graphql@16.6.0)
       '@json-schema-tools/meta-schema': 1.7.0
-      '@whatwg-node/fetch': 0.9.13
+      '@whatwg-node/fetch': 0.9.14
       ajv: 8.12.0
       ajv-formats: 2.1.1(ajv@8.12.0)
       dset: 3.1.3
@@ -28958,7 +28958,7 @@ packages:
 
   file:packages/sdk:
     resolution: {directory: packages/sdk, type: directory}
-    name: '@wundergraph/sdk'
+    name: '@undergraph-dev/sdk'
     hasBin: true
     requiresBuild: true
     dependencies:
@@ -28982,6 +28982,12 @@ packages:
       '@opentelemetry/sdk-trace-node': 1.17.1(@opentelemetry/api@1.6.0)
       '@opentelemetry/semantic-conventions': 1.17.1
       '@prisma/generator-helper': 3.15.2
+      '@undergraph-dev/orm': link:packages/orm
+      '@undergraph-dev/protobuf': link:packages/protobuf
+      '@undergraph-dev/wunderctl': link:packages/wunderctl
+      '@undergraph/orm': link:packages/orm
+      '@undergraph/protobuf': link:packages/protobuf
+      '@undergraph/wunderctl': link:packages/wunderctl
       '@whatwg-node/fetch': 0.9.14
       '@wundergraph/orm': link:packages/orm
       '@wundergraph/protobuf': link:packages/protobuf

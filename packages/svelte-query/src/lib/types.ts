@@ -7,7 +7,7 @@ import type {
 	WithInput,
 	UploadRequestOptions,
 	ResponseError,
-} from '@wundergraph/sdk/client';
+} from '@undergraph-dev/sdk/client';
 
 import type {
 	CreateQueryOptions as TanstackCreateQueryOptions,

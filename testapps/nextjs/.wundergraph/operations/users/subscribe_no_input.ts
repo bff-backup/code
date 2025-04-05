@@ -1,5 +1,5 @@
 import { createOperation, z } from '../../generated/wundergraph.factory';
-import { ExtractResponse } from '@wundergraph/sdk/dist/operations';
+import { ExtractResponse } from '@undergraph-dev/sdk/dist/operations';
 
 const sub = createOperation.subscription({
 	response: z.object({

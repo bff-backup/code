@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import * as jose from 'jose';
-import { AuthorizationError, ClientResponse, ResponseError } from '@wundergraph/sdk/client';
+import { AuthorizationError, ClientResponse, ResponseError } from '@undergraph-dev/sdk/client';
 
 const keyID = '123456';
 const keyAlgorithm = 'RS256';

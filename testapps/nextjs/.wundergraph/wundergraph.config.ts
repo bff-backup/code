@@ -5,10 +5,10 @@ import {
 	EnvironmentVariable,
 	introspect,
 	templates,
-} from '@wundergraph/sdk';
+} from '@undergraph-dev/sdk';
 import server from './wundergraph.server';
 import operations from './wundergraph.operations';
-import { NextJsTemplate } from '@wundergraph/nextjs/dist/template';
+import { NextJsTemplate } from '@undergraph-dev/nextjs/dist/template';
 
 const countries = introspect.graphql({
 	apiNamespace: 'countries',

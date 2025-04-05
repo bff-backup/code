@@ -1,12 +1,12 @@
-import { cors, type WunderGraphConfig } from '@wundergraph/sdk';
+import { cors, type WunderGraphConfig } from '@undergraph-dev/sdk';
 
-import { graphql } from '@wundergraph/sdk/datasources';
-import { demoAuth } from '@wundergraph/sdk/auth';
+import { graphql } from '@undergraph-dev/sdk/datasources';
+import { demoAuth } from '@undergraph-dev/sdk/auth';
 
-import { nextjs } from '@wundergraph/nextjs/integration';
-import { minio } from '@wundergraph/sdk/integrations';
+import { nextjs } from '@undergraph-dev/nextjs/integration';
+import { minio } from '@undergraph-dev/sdk/integrations';
 
-import { dynamicTransport } from '@wundergraph/sdk/advanced-hooks';
+import { dynamicTransport } from '@undergraph-dev/sdk/advanced-hooks';
 
 const countries = graphql({
 	namespace: 'countries',

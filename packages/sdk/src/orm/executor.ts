@@ -7,7 +7,7 @@ import {
 	visit,
 	print,
 } from 'graphql';
-import { type Executor } from '@wundergraph/orm';
+import { type Executor } from '@undergraph-dev/orm';
 import traverse from 'traverse';
 import { applyPatch } from 'fast-json-patch';
 import { fetch } from '@whatwg-node/fetch';
@@ -42,7 +42,7 @@ interface FetchOptions {
 // before it could be used in production.
 //
 // @todo we could make this generic enough to implement in
-// the `@wundergraph/orm` package (i.e support a middleware-style
+// the `@undergraph-dev/orm` package (i.e support a middleware-style
 // API like `graphql-request` does).
 
 // @todo extend `Client` if possible (is it meant for interfacing with the "native" GraphQL API's the WunderNode exposes?)

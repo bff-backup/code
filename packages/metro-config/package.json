@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/metro-config",
+  "name": "@undergraph-dev/metro-config",
   "version": "0.0.1",
   "license": "Apache-2.0",
-  "description": "WunderGraph Metro Config for React Native and Expo",
+  "description": "UnderGraph Metro Config for React Native and Expo",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/undergraph-dev/undergraph.git"
   },
   "dependencies": {
     "event-source-polyfill": "^1.0.31",
@@ -32,14 +32,14 @@
     "tsup": "^6.7.0",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://undergraph.dev",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "UnderGraph Maintainers",
+    "email": "info@undergraph.dev"
   },
   "keywords": [
     "expo",
-    "wundergraph",
+    "undergraph",
     "react-native",
     "metro-config"
   ]

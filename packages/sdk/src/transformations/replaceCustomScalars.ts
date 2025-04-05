@@ -1,6 +1,6 @@
 import { GraphQLIntrospection, OpenAPIIntrospection, ReplaceCustomScalarTypeFieldConfiguration } from '../definition';
 import { FieldDefinitionNode, InputValueDefinitionNode, parse, print, visit } from 'graphql';
-import { SingleTypeField } from '@wundergraph/protobuf';
+import { SingleTypeField } from '@undergraph-dev/protobuf';
 
 export interface ReplaceCustomScalarsResult {
 	schemaSDL: string;

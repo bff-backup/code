@@ -1,4 +1,4 @@
-import { configureWunderGraphOperations, enableCaching } from '@wundergraph/sdk';
+import { configureWunderGraphOperations, enableCaching } from '@undergraph-dev/sdk';
 
 export default configureWunderGraphOperations({
 	operations: {

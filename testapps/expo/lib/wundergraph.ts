@@ -1,5 +1,5 @@
 import { createClient, Operations } from '../generated/client';
-import { createHooks } from '@wundergraph/swr';
+import { createHooks } from '@undergraph-dev/swr';
 
 export const client = createClient();
 

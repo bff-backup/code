@@ -1,5 +1,5 @@
 import { createHooks } from '../src';
-import { Client, ResponseError, OperationsDefinition, User } from '@wundergraph/sdk/client';
+import { Client, ResponseError, OperationsDefinition, User } from '@undergraph-dev/sdk/client';
 import { expectType } from 'tsd';
 import { UseQueryReturnType } from '@tanstack/vue-query';
 import { unref } from 'vue';

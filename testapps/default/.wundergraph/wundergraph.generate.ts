@@ -1,5 +1,5 @@
-import { configureWunderGraphGeneration, templates } from '@wundergraph/sdk';
-import { golangClient } from '@wundergraph/golang-client';
+import { configureWunderGraphGeneration, templates } from '@undergraph-dev/sdk';
+import { golangClient } from '@undergraph-dev/golang-client';
 
 export default configureWunderGraphGeneration({
 	codeGenerators: [

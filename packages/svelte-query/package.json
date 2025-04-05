@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/svelte-query",
+  "name": "@undergraph-dev/svelte-query",
   "version": "0.3.33",
   "license": "Apache-2.0",
-  "description": "WunderGraph Svelte Query Integration",
+  "description": "UnderGraph Svelte Query Integration",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -27,11 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/undergraph-dev/undergraph.git"
   },
   "peerDependencies": {
     "@tanstack/svelte-query": "^4.29.1",
-    "@wundergraph/sdk": ">=0.143.0",
+    "@undergraph-dev/sdk": ">=0.143.0",
     "svelte": ">=3 <5"
   },
   "devDependencies": {
@@ -43,7 +43,7 @@
     "@testing-library/svelte": "^3.2.2",
     "@types/jest": "^28.1.1",
     "@types/node-fetch": "2.6.2",
-    "@wundergraph/sdk": "workspace:*",
+    "@undergraph-dev/sdk": "workspace:*",
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.6.1",
     "nock": "^13.2.9",
@@ -53,14 +53,14 @@
     "tsd": "^0.24.1",
     "typescript": "^5.1.6"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://undergraph.dev",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "UnderGraph Maintainers",
+    "email": "info@undergraph.dev"
   },
   "keywords": [
     "svelte-query",
-    "wundergraph",
+    "undergraph",
     "svelte"
   ]
 }

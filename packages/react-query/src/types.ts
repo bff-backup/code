@@ -8,7 +8,7 @@ import {
 	SubscriptionRequestOptions,
 	UploadRequestOptions,
 	WithInput,
-} from '@wundergraph/sdk/client';
+} from '@undergraph-dev/sdk/client';
 
 import {
 	UseQueryOptions as UseTanstackQueryOptions,
@@ -16,7 +16,7 @@ import {
 	UseQueryResult,
 	UseMutationResult,
 } from '@tanstack/react-query';
-import { ResponseError } from '@wundergraph/sdk/client';
+import { ResponseError } from '@undergraph-dev/sdk/client';
 
 export type QueryFetcher<Operations extends OperationsDefinition> = {
 	<

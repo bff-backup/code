@@ -1,5 +1,5 @@
-import { Client, OperationsDefinition } from '@wundergraph/sdk/client';
-import { createHooks, UseQueryHook, UseSubscriptionHook } from '@wundergraph/swr';
+import { Client, OperationsDefinition } from '@undergraph-dev/sdk/client';
+import { createHooks, UseQueryHook, UseSubscriptionHook } from '@undergraph-dev/swr';
 import { WithWunderGraphOptions } from './types';
 import { withWunderGraph } from './with-wundergraph';
 

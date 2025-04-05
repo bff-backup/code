@@ -1,5 +1,5 @@
 import { createServer } from '../server';
-import { OperationExecutionEngine, OperationType } from '@wundergraph/protobuf';
+import { OperationExecutionEngine, OperationType } from '@undergraph-dev/protobuf';
 import { FastifyRequestBody, OnConnectionInitHookRequestBody, WunderGraphHooksAndServerConfig } from '../types';
 
 export const getFastify = async (serverConfig: WunderGraphHooksAndServerConfig) => {

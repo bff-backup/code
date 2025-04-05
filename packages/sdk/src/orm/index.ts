@@ -1,3 +1,3 @@
-export * from '@wundergraph/orm';
+export * from '@undergraph-dev/orm';
 
 export * from './executor';

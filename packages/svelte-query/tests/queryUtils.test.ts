@@ -1,5 +1,5 @@
 import { QueryCache, QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/svelte-query';
-import { Client, ClientConfig, GraphQLError, OperationsDefinition } from '@wundergraph/sdk/client';
+import { Client, ClientConfig, GraphQLError, OperationsDefinition } from '@undergraph-dev/sdk/client';
 import nock from 'nock';
 import fetch from 'node-fetch';
 import { render, fireEvent, screen, waitFor, act } from '@testing-library/svelte';

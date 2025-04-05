@@ -20,10 +20,10 @@ import type {
 	ExtractProfileName,
 	ExtractMeta,
 	GraphQLError
-} from "@wundergraph/sdk/client";
+} from "@undergraph-dev/sdk/client";
 import {
 	Client,
-} from "@wundergraph/sdk/client";
+} from "@undergraph-dev/sdk/client";
 import type { OperationErrors } from "./ts-operation-errors";
 
 import type { PublicCustomClaims } from "./claims";

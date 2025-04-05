@@ -11,7 +11,7 @@ import {
 	WunderGraphRequest,
 	WunderGraphResponse,
 } from '../types';
-import { OperationType, WunderGraphConfiguration } from '@wundergraph/protobuf';
+import { OperationType, WunderGraphConfiguration } from '@undergraph-dev/protobuf';
 import { RawRequestDefaultExpression, RawServerDefault } from 'fastify/types/utils';
 import { Headers } from '@whatwg-node/fetch';
 import { FastifyRequest } from 'fastify';

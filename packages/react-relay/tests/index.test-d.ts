@@ -1,4 +1,4 @@
-import { Client, OperationsDefinition, ResponseError } from '@wundergraph/sdk/client';
+import { Client, OperationsDefinition, ResponseError } from '@undergraph-dev/sdk/client';
 import { createWunderGraphRelayApp } from '../src';
 
 interface Operations extends OperationsDefinition {

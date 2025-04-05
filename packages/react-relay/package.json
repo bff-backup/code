@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/react-relay",
+  "name": "@undergraph-dev/react-relay",
   "version": "0.4.33",
   "license": "Apache-2.0",
-  "description": "WunderGraph Relay Integration",
+  "description": "UnderGraph Relay Integration",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -24,22 +24,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/undergraph-dev/undergraph.git"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://undergraph.dev",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "UnderGraph Maintainers",
+    "email": "info@undergraph.dev"
   },
   "keywords": [
     "relay",
     "react",
     "react-relay",
     "nextjs",
-    "wundergraph"
+    "undergraph"
   ],
   "peerDependencies": {
-    "@wundergraph/sdk": ">=0.145.1",
+    "@undergraph-dev/sdk": ">=0.145.1",
     "react": "^16.9.0 || ^17 || ^18",
     "react-relay": ">=15.0.0"
   },
@@ -51,7 +51,7 @@
     "@types/react": "^18.0.33",
     "@types/react-relay": "^14.1.3",
     "@types/relay-runtime": "^14.1.10",
-    "@wundergraph/sdk": "workspace:*",
+    "@undergraph-dev/sdk": "workspace:*",
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.6.1",
     "nock": "^13.2.9",

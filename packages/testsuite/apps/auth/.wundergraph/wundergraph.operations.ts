@@ -1,4 +1,4 @@
-import { BaseOperationConfiguration, configureWunderGraphOperations } from '@wundergraph/sdk';
+import { BaseOperationConfiguration, configureWunderGraphOperations } from '@undergraph-dev/sdk';
 
 export default configureWunderGraphOperations({
 	operations: {

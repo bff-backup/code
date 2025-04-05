@@ -7,7 +7,7 @@ export const schemasTemplate = `
 `;
 
 export const ormTemplate = `
-import type { ORM as ORMClass } from '@wundergraph/sdk/orm'
+import type { ORM as ORMClass } from '@undergraph-dev/sdk/orm'
 
 import {
   {{#each namespaces}}

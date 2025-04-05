@@ -1,12 +1,12 @@
-import { CodeGenerationConfig, GraphQLOperation, Template, TemplateOutputFile } from '@wundergraph/sdk';
-import { hasInput, visitJSONSchema } from '@wundergraph/sdk/internal/codegen';
+import { CodeGenerationConfig, GraphQLOperation, Template, TemplateOutputFile } from '@undergraph-dev/sdk';
+import { hasInput, visitJSONSchema } from '@undergraph-dev/sdk/internal/codegen';
 import { JSONSchema7 as JSONSchema, JSONSchema7 } from 'json-schema';
 import execa from 'execa';
 import { capitalize } from 'lodash';
 import Handlebars from 'handlebars';
 import { clientTemplate } from './client-template';
-import { OperationExecutionEngine, OperationType } from '@wundergraph/protobuf';
-import Logger from '@wundergraph/sdk/internal/logger';
+import { OperationExecutionEngine, OperationType } from '@undergraph-dev/protobuf';
+import Logger from '@undergraph-dev/sdk/internal/logger';
 
 const logger = Logger.child({ plugin: 'golang-client' });
 

@@ -1,7 +1,7 @@
 import { useWunderGraphContext } from './context';
 import { Key, Middleware } from 'swr';
 import { BareFetcher, PublicConfiguration, SWRHook } from 'swr/_internal';
-import { serialize } from '@wundergraph/sdk/internal';
+import { serialize } from '@undergraph-dev/sdk/internal';
 
 type Operation = {
 	operationName: string;

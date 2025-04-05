@@ -1,8 +1,8 @@
 {
-  "name": "@wundergraph/wunderctl",
+  "name": "@undergraph-dev/wunderctl",
   "version": "0.180.0",
   "license": "Apache-2.0",
-  "description": "WunderGraph Command Line Interface",
+  "description": "UnderGraph Command Line Interface",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -24,15 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/undergraph-dev/undergraph.git"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://undergraph.dev",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "UnderGraph Maintainers",
+    "email": "info@undergraph.dev"
   },
   "bugs": {
-    "url": "https://github.com/wundergraph/wundergraph/issues"
+    "url": "https://github.com/undergraph-dev/undergraph/issues"
   },
   "devDependencies": {
     "@types/debug": "^4.1.7",

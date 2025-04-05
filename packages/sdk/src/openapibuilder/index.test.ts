@@ -1,6 +1,6 @@
 import { JSONSchema7 } from 'json-schema';
 
-import { OperationExecutionEngine, OperationType } from '@wundergraph/protobuf';
+import { OperationExecutionEngine, OperationType } from '@undergraph-dev/protobuf';
 import { GraphQLOperation } from '../graphql/operations';
 import { OpenApiBuilder, isValidOpenApiSchemaName } from './index';
 import { JSONSchema } from 'json-schema-to-typescript';

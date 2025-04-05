@@ -2,7 +2,7 @@
   "private": "true",
   "name": "testsuite",
   "version": "0.0.1",
-  "description": "Integration tests for WunderGraph SDK",
+  "description": "Integration tests for UnderGraph SDK",
   "scripts": {
     "test": "VITEST_MIN_THREADS=2 VITEST_MAX_THREADS=4 vitest run",
     "test:ci": "vitest run",
@@ -18,15 +18,15 @@
     "@opensearch-project/opensearch": "^2.2.1",
     "@opentelemetry/otlp-proto-exporter-base": "^0.39.1",
     "@opentelemetry/otlp-transformer": "^0.39.1",
-    "@wundergraph/sdk": "workspace:*",
-    "@wundergraph/wunderctl": "workspace:*",
+    "@undergraph-dev/sdk": "workspace:*",
+    "@undergraph-dev/wunderctl": "workspace:*",
     "graphql": "^16.3.0",
     "zod": "^3.22.3"
   },
   "devDependencies": {
     "@graphql-yoga/node": "^2.13.13",
     "@prisma/client": "^4.15.0",
-    "@wundergraph/rust-client": "workspace:^",
+    "@undergraph-dev/rust-client": "workspace:^",
     "execa": "5.1.1",
     "fastify": "^4.10.2",
     "graphql-request": "^6.0.0",

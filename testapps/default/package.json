@@ -4,15 +4,15 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/undergraph-dev/undergraph.git"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://undergraph.dev",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "UnderGraph Maintainers",
+    "email": "info@undergraph.dev"
   },
   "bugs": {
-    "url": "https://github.com/wundergraph/wundergraph/issues"
+    "url": "https://github.com/undergraph-dev/undergraph/issues"
   },
   "scripts": {
     "dev": "wunderctl up",
@@ -26,8 +26,8 @@
   "dependencies": {
     "@octokit/webhooks-types": "^6.10.0",
     "@types/node": "^18.16.0",
-    "@wundergraph/golang-client": "workspace:*",
-    "@wundergraph/sdk": "workspace:*",
+    "@undergraph-dev/golang-client": "workspace:*",
+    "@undergraph-dev/sdk": "workspace:*",
     "graphql": "^16.3.0",
     "openai": "^3.3.0",
     "pg": "^8.7.3",

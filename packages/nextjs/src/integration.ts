@@ -1,4 +1,4 @@
-import { defineIntegration } from '@wundergraph/sdk/integrations';
+import { defineIntegration } from '@undergraph-dev/sdk/integrations';
 
 export interface NextJsIntegrationOptions {
 	/**
