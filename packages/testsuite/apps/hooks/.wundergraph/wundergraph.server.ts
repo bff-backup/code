@@ -1,7 +1,7 @@
 import { GraphQLObjectType, GraphQLSchema, GraphQLString, GraphQLInt, GraphQLFloat, GraphQLBoolean } from 'graphql';
 
-import { configureWunderGraphServer } from '@wundergraph/sdk/server';
-import { ResponseError } from '@wundergraph/sdk/client';
+import { configureWunderGraphServer } from '@undergraph-dev/sdk/server';
+import { ResponseError } from '@undergraph-dev/sdk/client';
 
 export default configureWunderGraphServer(() => ({
 	hooks: {

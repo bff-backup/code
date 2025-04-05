@@ -221,7 +221,7 @@ export const openApiSpecificationToGraphQLApi = async (
 		validateNamespace(introspection.apiNamespace);
 	}
 
-	const openApiLogger = logger ? new OpenAPILogger(logger.child({ component: '@wundergraph/openapi' })) : undefined;
+	const openApiLogger = logger ? new OpenAPILogger(logger.child({ component: '@undergraph-dev/openapi' })) : undefined;
 
 	const options: OpenApiOptions = {
 		source,

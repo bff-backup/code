@@ -8,7 +8,7 @@ import {
 } from './namespacing';
 import { buildSchema, parse, print } from 'graphql';
 import { assert } from 'chai';
-import { DirectiveConfiguration, FieldConfiguration, TypeConfiguration, TypeField } from '@wundergraph/protobuf';
+import { DirectiveConfiguration, FieldConfiguration, TypeConfiguration, TypeField } from '@undergraph-dev/protobuf';
 
 test('apply namespace to starwars schema', () => {
 	const actual = applyNameSpaceToGraphQLSchema(starWarsSchema, ['api_hero'], 'api');

@@ -15,7 +15,7 @@ import {
 import fs from 'fs';
 import path from 'path';
 import { visitJSONSchema } from '../../jsonschema';
-import { OperationExecutionEngine } from '@wundergraph/protobuf';
+import { OperationExecutionEngine } from '@undergraph-dev/protobuf';
 import { GraphQLOperation } from '../../../graphql/operations';
 import { TypeScriptOperationErrors } from './ts-operation-errors';
 
@@ -306,7 +306,7 @@ export class BaseTypeScriptDataModel implements Template {
 			.join('\n\n');
 
 		const functionImports = typescriptFunctionsImports(generationConfig);
-		const graphQLTypeImport = "import type { GraphQLError } from '@wundergraph/sdk/client';";
+		const graphQLTypeImport = "import type { GraphQLError } from '@undergraph-dev/sdk/client';";
 		const imports = functionImports + graphQLTypeImport;
 
 		const content = '\n' + imports + '\n\n' + models + '\n\n' + typeScriptJsonDefinition + '\n';
@@ -342,7 +342,7 @@ const typescriptFunctionsImports = (generationConfig: CodeGenerationConfig): str
 	const relImport = (op: GraphQLOperation) => path.join(relBasePath, 'operations', op.PathName).replace(/\\/g, '/');
 	return (
 		ops.map((op) => `import type function_${op.Name} from '${relImport(op)}';\n`).join('') +
-		'import type {ExtractInput,ExtractResponse} from "@wundergraph/sdk/operations";\n' +
+		'import type {ExtractInput,ExtractResponse} from "@undergraph-dev/sdk/operations";\n' +
 		'import type { OperationErrors } from "./ts-operation-errors";\n'
 	);
 };

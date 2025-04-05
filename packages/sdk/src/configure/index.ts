@@ -67,7 +67,7 @@ import {
 	WunderGraphConfiguration,
 	Hook,
 	HookType,
-} from '@wundergraph/protobuf';
+} from '@undergraph-dev/protobuf';
 import { SDK_VERSION } from '../version';
 import { AuthenticationProvider } from './authentication';
 import { findUp } from './findup';
@@ -1516,7 +1516,7 @@ const typeScriptOperationsResponseSchemas = async (wgDirAbs: string, operations:
 
 	const programFile = 'typescript_schema_generator.ts';
 
-	const contents: string[] = ['import type { ExtractResponse } from "@wundergraph/sdk/operations";'];
+	const contents: string[] = ['import type { ExtractResponse } from "@undergraph-dev/sdk/operations";'];
 	const operationHashes: string[] = [];
 
 	for (const op of operations) {

@@ -1,5 +1,5 @@
 import { describe, it } from 'vitest';
-import { WunderGraphMockServer, WunderGraphTestServer, WunderGraphTestServers } from '@wundergraph/sdk/testing';
+import { WunderGraphMockServer, WunderGraphTestServer, WunderGraphTestServers } from '@undergraph-dev/sdk/testing';
 
 describe('Stop servers', () => {
 	it('Should be possible to stop the server with the cleanup function returned by stop()', async () => {

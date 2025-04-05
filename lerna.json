@@ -15,7 +15,7 @@
   "loglevel": "verbose",
   "changelogPreset": "conventional-changelog-conventionalcommits",
   "packages": [
-    "packages/create-wundergraph-app",
+    "packages/create-undergraph-app",
     "packages/golang-client",
     "packages/nextjs",
     "packages/orm",

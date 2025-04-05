@@ -1,10 +1,10 @@
 {
-  "name": "@wundergraph/protobuf",
+  "name": "@undergraph-dev/protobuf",
   "version": "0.118.2",
   "license": "Apache-2.0",
   "main": "./dist/wundernode_config.js",
   "types": "./dist/wundernode_config.d.ts",
-  "description": "WunderGraph protobuf descriptions",
+  "description": "UnderGraph protobuf descriptions",
   "files": [
     "dist"
   ],
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wundergraph/wundergraph.git"
+    "url": "git+https://github.com/undergraph-dev/undergraph.git"
   },
-  "homepage": "https://wundergraph.com",
+  "homepage": "https://undergraph.dev",
   "author": {
-    "name": "WunderGraph Maintainers",
-    "email": "info@wundergraph.com"
+    "name": "UnderGraph Maintainers",
+    "email": "info@undergraph.dev"
   },
   "bugs": {
-    "url": "https://github.com/wundergraph/wundergraph/issues"
+    "url": "https://github.com/undergraph-dev/undergraph/issues"
   },
   "scripts": {
     "build": "./generate.sh && tsc"

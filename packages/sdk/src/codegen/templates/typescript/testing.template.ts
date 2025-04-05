@@ -1,6 +1,6 @@
 //language=handlebars
 export const handlebarTemplate = `
-import { ServerOptions, WunderGraphTestServer, WunderGraphMockServer, WunderGraphTestServers } from "@wundergraph/sdk/testing";
+import { ServerOptions, WunderGraphTestServer, WunderGraphMockServer, WunderGraphTestServers } from "@undergraph-dev/sdk/testing";
 import { createClient, WunderGraphClient } from "./client";
 
 /**

@@ -7,7 +7,7 @@ import packageJson from '../package.json';
 
 let projectName = '';
 
-const program = new Command('create-wundergraph-app')
+const program = new Command('create-undergraph-app')
 	.version(packageJson.version)
 	.arguments('[project-name]')
 	.usage(`${chalk.green('[project-name]')} [options]`)

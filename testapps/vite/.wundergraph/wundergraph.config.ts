@@ -5,7 +5,7 @@ import {
 	EnvironmentVariable,
 	introspect,
 	templates,
-} from '@wundergraph/sdk';
+} from '@undergraph-dev/sdk';
 import operations from './wundergraph.operations';
 import server from './wundergraph.server';
 

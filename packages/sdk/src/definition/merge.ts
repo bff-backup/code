@@ -17,7 +17,7 @@ import {
 	DataSourceKind,
 	FieldConfiguration,
 	TypeConfiguration,
-} from '@wundergraph/protobuf';
+} from '@undergraph-dev/protobuf';
 import { Api, DataSource, StaticApiCustom } from './index';
 import { WellKnownClaim, WellKnownClaimValues } from '../graphql/operations';
 import { printSchemaWithDirectives } from '@graphql-tools/utils';

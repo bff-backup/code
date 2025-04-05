@@ -1,5 +1,5 @@
 import { createHooks } from '../src';
-import { Client, ResponseError, OperationsDefinition, User } from '@wundergraph/sdk/client';
+import { Client, ResponseError, OperationsDefinition, User } from '@undergraph-dev/sdk/client';
 import { expectType } from 'tsd';
 import { CreateQueryResult } from '@tanstack/solid-query';
 

@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 import { GraphQLApi } from '../definition';
 import { parse, print } from 'graphql';
-import { ArgumentRenderConfiguration, ArgumentSource, DataSourceKind, HTTPMethod } from '@wundergraph/protobuf';
+import { ArgumentRenderConfiguration, ArgumentSource, DataSourceKind, HTTPMethod } from '@undergraph-dev/protobuf';
 import transformApi from './index';
 import { mapInputVariable } from '../configure/variables';
 

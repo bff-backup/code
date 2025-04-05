@@ -37,7 +37,7 @@ import {
 	HTTPHeader,
 	HTTPMethod,
 	hTTPMethodToJSON,
-} from '@wundergraph/protobuf';
+} from '@undergraph-dev/protobuf';
 import yaml from 'js-yaml';
 import { OpenAPIV3 } from 'openapi-types';
 import {

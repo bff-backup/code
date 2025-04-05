@@ -8,7 +8,7 @@ import {
 	SubscriptionRequestOptions,
 	UploadRequestOptions,
 	WithInput,
-} from '@wundergraph/sdk/client';
+} from '@undergraph-dev/sdk/client';
 
 import {
 	UseQueryOptions as UseTanstackQueryOptions,
@@ -32,7 +32,7 @@ export type MaybeRefDeep<T> = MaybeRef<
 
 import { MutationObserverOptions } from '@tanstack/query-core';
 
-import { ResponseError } from '@wundergraph/sdk/client';
+import { ResponseError } from '@undergraph-dev/sdk/client';
 
 export type QueryFetcher<Operations extends OperationsDefinition> = {
 	<

@@ -1,4 +1,4 @@
-import { Client, ResponseError, OperationsDefinition, UploadResponse, User } from '@wundergraph/sdk/client';
+import { Client, ResponseError, OperationsDefinition, UploadResponse, User } from '@undergraph-dev/sdk/client';
 import { expectType } from 'tsd';
 import { SWRResponse } from 'swr';
 import { createHooks } from '../src';

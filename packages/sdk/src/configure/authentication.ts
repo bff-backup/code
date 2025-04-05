@@ -1,4 +1,4 @@
-import { AuthProvider, AuthProviderKind, OpenIDConnectQueryParameter } from '@wundergraph/protobuf';
+import { AuthProvider, AuthProviderKind, OpenIDConnectQueryParameter } from '@undergraph-dev/protobuf';
 import { InputVariable, mapInputVariable } from './variables';
 
 export interface AuthenticationProvider {

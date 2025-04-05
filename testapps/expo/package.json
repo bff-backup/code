@@ -1,5 +1,5 @@
 {
-  "name": "wundergraph-expo-swr-testapp",
+  "name": "undergraph-expo-swr-testapp",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -7,9 +7,9 @@
     "@expo/webpack-config": "^18.1.2",
     "@rnx-kit/metro-config": "^1.3.5",
     "@rnx-kit/metro-resolver-symlinks": "^0.1.27",
-    "@wundergraph/metro-config": "workspace:*",
-    "@wundergraph/sdk": "workspace:*",
-    "@wundergraph/swr": "workspace:*",
+    "@undergraph-dev/metro-config": "workspace:*",
+    "@undergraph-dev/sdk": "workspace:*",
+    "@undergraph-dev/swr": "workspace:*",
     "expo": "^48.0.17",
     "react": "18.2.0",
     "react-dom": "18.2.0",

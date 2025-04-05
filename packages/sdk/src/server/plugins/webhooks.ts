@@ -1,11 +1,11 @@
 import { FastifyPluginAsync } from 'fastify';
 import path from 'path';
-import type { ORM } from '@wundergraph/orm';
+import type { ORM } from '@undergraph-dev/orm';
 
 import { Webhook, WebhookHeaders, WebhookQuery } from '../../webhooks/types';
 import { Headers } from '@whatwg-node/fetch';
 import type { RequestMethod } from '../types';
-import type { WebhookConfiguration } from '@wundergraph/protobuf';
+import type { WebhookConfiguration } from '@undergraph-dev/protobuf';
 import process from 'node:process';
 import { OperationsClient } from '../operations-client';
 import { propagation, trace } from '@opentelemetry/api';

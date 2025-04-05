@@ -1,6 +1,6 @@
 import localImported from './../../local-import';
 import { buildSchema } from 'graphql';
-import type { WebhookHttpEvent, WebhookHttpResponse } from '@wundergraph/sdk/server';
+import type { WebhookHttpEvent, WebhookHttpResponse } from '@undergraph-dev/sdk/server';
 import { createWebhook } from '../generated/wundergraph.webhooks';
 
 import type { WebhookEvent } from '@octokit/webhooks-types';

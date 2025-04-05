@@ -1,4 +1,4 @@
-import { Client, ClientConfig, GraphQLError, OperationsDefinition } from '@wundergraph/sdk/client';
+import { Client, ClientConfig, GraphQLError, OperationsDefinition } from '@undergraph-dev/sdk/client';
 import fetch from 'node-fetch';
 
 export type Queries = {

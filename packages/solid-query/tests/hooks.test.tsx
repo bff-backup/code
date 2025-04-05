@@ -1,7 +1,7 @@
 import { waitFor, screen, render, fireEvent } from '@solidjs/testing-library';
 import { QueryCache, QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/solid-query';
 import { createEffect, JSX } from 'solid-js';
-import { Client, ClientConfig, OperationsDefinition, ResponseError } from '@wundergraph/sdk/client';
+import { Client, ClientConfig, OperationsDefinition, ResponseError } from '@undergraph-dev/sdk/client';
 import nock from 'nock';
 import fetch from 'node-fetch';
 

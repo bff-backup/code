@@ -1,12 +1,12 @@
 import { render, screen, waitFor } from '@testing-library/react';
-import { Client, ClientConfig } from '@wundergraph/sdk/client';
+import { Client, ClientConfig } from '@undergraph-dev/sdk/client';
 
 import nock from 'nock';
 import fetch from 'node-fetch';
 import React from 'react';
 
-import { serialize } from '@wundergraph/sdk/internal';
-import { userSWRKey } from '@wundergraph/swr';
+import { serialize } from '@undergraph-dev/sdk/internal';
+import { userSWRKey } from '@undergraph-dev/swr';
 import { SWRConfig } from 'swr';
 import { useWunderGraphContext } from './context';
 import { createWunderGraphNext } from './create-wundergraph';

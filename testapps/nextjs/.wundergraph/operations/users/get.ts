@@ -1,5 +1,5 @@
 import { createOperation, z } from '../../generated/wundergraph.factory';
-import { AuthorizationError, ExtractResponse } from '@wundergraph/sdk/operations';
+import { AuthorizationError, ExtractResponse } from '@undergraph-dev/sdk/operations';
 import { ZodType } from 'zod';
 
 const query = createOperation.query({

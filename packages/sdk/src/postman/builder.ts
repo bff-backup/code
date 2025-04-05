@@ -1,4 +1,4 @@
-import { OperationType } from '@wundergraph/protobuf';
+import { OperationType } from '@undergraph-dev/protobuf';
 import { JSONSchema7Definition } from 'json-schema';
 import { Collection, Item, PropertyList, Request } from 'postman-collection';
 import { GraphQLOperation } from '../graphql/operations';

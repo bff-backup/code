@@ -7,8 +7,8 @@ import { writable, derived } from 'svelte/store';
 import type { Readable, Writable } from 'svelte/store';
 import { onDestroy, onMount } from 'svelte';
 import type { QueryFunctionContext } from '@tanstack/svelte-query';
-import type { OperationsDefinition, LogoutOptions, Client } from '@wundergraph/sdk/client';
-import { serialize } from '@wundergraph/sdk/internal';
+import type { OperationsDefinition, LogoutOptions, Client } from '@undergraph-dev/sdk/client';
+import { serialize } from '@undergraph-dev/sdk/internal';
 import type {
 	CreateFileUpload,
 	CreateMutation,

@@ -3,7 +3,7 @@ import {
 	introspect,
 	templates,
 	configureWunderGraphGeneration,
-} from '@wundergraph/sdk';
+} from '@undergraph-dev/sdk';
 import server from './wundergraph.server';
 import operations from './wundergraph.operations';
 import { z } from 'zod';
