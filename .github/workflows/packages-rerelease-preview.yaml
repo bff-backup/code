@@ -1,0 +1,45 @@
+name: Packages Re-Release Preview
+
+on:
+  pull_request:
+    tags-ignore:
+      - '**'
+    branches:
+      - 'main'
+      - 'next'
+    paths-ignore:
+      - 'docs*/**'
+      - '*.md'
+
+concurrency:
+  group: ${{github.workflow}}-${{github.head_ref}}
+  cancel-in-progress: false
+
+env:
+  CI: true
+
+jobs:
+  version:
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - uses: ./.github/actions/node
+        with:
+          working-directory: ${{ env.WORKING_DIRECTORY }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install
+        run: |
+          pnpm add -g @lerna-lite/cli@1.12.0 @commitlint/config-conventional@17.0.0
+
+      - name: List packages to be released
+        run: pnpm lerna publish from-package --dry-run --yes --verify-access
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # - name: Show CHANGELOG.md
+      #   run: echo -e "\`\`\`diff\n$(git --no-pager diff './packages/*/CHANGELOG.md')\n\`\`\`" >> $GITHUB_STEP_SUMMARY
