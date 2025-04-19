@@ -26,7 +26,7 @@ builds:
     env:
       - CGO_ENABLED=0
     ldflags:
-      - -w -s -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.Date}} -X main.builtBy=ci -X main.githubAuthDemoClientID={{.Env.GH_AUTH_DEMO_CLIENT_ID}} -X main.githubAuthDemoClientSecret={{.Env.GH_AUTH_DEMO_CLIENT_SECRET}} -X github.com/wundergraph/wundergraph/cli/commands.licensingPublicKey={{.Env.LICENSING_PUBLIC_KEY}}
+      - -w -s -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{.Date}} -X main.builtBy=ci -X main.githubAuthDemoClientID={{.Env.GH_AUTH_DEMO_CLIENT_ID}} -X main.githubAuthDemoClientSecret={{.Env.GH_AUTH_DEMO_CLIENT_SECRET}} -X github.com/bff-backup/bff-backup/cli/commands.licensingPublicKey={{.Env.LICENSING_PUBLIC_KEY}}
     goos:
       - linux
     goarch:
@@ -74,13 +74,13 @@ release:
   name_template: 'Release {{.ProjectName}} {{.Tag}}'
   header: |
     This is a new release of the command-line interface (CLI) {{.ProjectName}}.
-    It allows you to create, deploy and manage your WunderGraph application.
-    Please check the [readme](https://github.com/wundergraph/wundergraph) or [documentation](https://wundergraph.com/docs) if you want to learn more.
+    It allows you to create, deploy and manage your BFF Backup application.
+    Please check the [readme](https://github.com/bff-backup/code) or [documentation](https://wundergraph.com/docs) if you want to learn more.
 
     For breaking changes, please check the [migration](/docs/migrations) guidelines for more information.
   github:
-    owner: wundergraph
-    name: wundergraph
+    owner: bff-backup
+    name: code
 
 checksum:
   name_template: '{{ .ProjectName }}_{{ .Version }}_linux_checksums.txt'
