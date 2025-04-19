@@ -11,62 +11,65 @@ concurrency:
   group: ${{github.workflow}}-${{github.head_ref}}
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
-  goreleaser-darwin:
-    name: Release MacOS build
-    runs-on: 'macos-latest'
-    timeout-minutes: 20
-    steps:
-      - name: checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.client_payload.ref }}
+  # goreleaser-darwin:
+  #   name: Release MacOS build
+  #   runs-on: 'macos-latest'
+  #   timeout-minutes: 20
+  #   steps:
+  #     - name: checkout
+  #       uses: actions/checkout@v3
+  #       with:
+  #         fetch-depth: 0
+  #         ref: ${{ github.event.client_payload.ref }}
 
-      - uses: ./.github/actions/go
-        with:
-          working-directory: ${{ env.WORKING_DIRECTORY }}
+  #     - uses: ./.github/actions/go
+  #       with:
+  #         working-directory: ${{ env.WORKING_DIRECTORY }}
 
-      - name: Install Protoc
-        uses: abelfodil/protoc-action@v1
-        with:
-          protoc-version: '21.5'
+  #     - name: Install Protoc
+  #       uses: abelfodil/protoc-action@v1
+  #       with:
+  #         protoc-version: '21.5'
 
-      - name: Install Gon
-        run: |
-          brew tap mitchellh/gon
-          brew install gon
+  #     - name: Install Gon
+  #       run: |
+  #         brew tap mitchellh/gon
+  #         brew install gon
 
-      - name: Import Code-Signing Certificates
-        uses: Apple-Actions/import-codesign-certs@v1
-        with:
-          p12-file-base64: ${{ secrets.APPLE_DEVELOPER_CERTIFICATE_P12_BASE64 }}
-          p12-password: ${{ secrets.AC_PASSWORD }}
+  #     - name: Import Code-Signing Certificates
+  #       uses: Apple-Actions/import-codesign-certs@v1
+  #       with:
+  #         p12-file-base64: ${{ secrets.APPLE_DEVELOPER_CERTIFICATE_P12_BASE64 }}
+  #         p12-password: ${{ secrets.AC_PASSWORD }}
 
-      - name: Show installed SDK's
-        run: xcodebuild -showsdks
+  #     - name: Show installed SDK's
+  #       run: xcodebuild -showsdks
 
-      - name: generate go types based on protobuf definitions
-        run: make codegen-go
+  #     - name: generate go types based on protobuf definitions
+  #       run: make codegen-go
 
-      - name: Check if git is not dirty after generating files
-        run: git diff --no-ext-diff --exit-code
+  #     - name: Check if git is not dirty after generating files
+  #       run: git diff --no-ext-diff --exit-code
 
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v3
-        with:
-          version: latest
-          workdir: './cmd/wunderctl'
-          distribution: goreleaser-pro
-          args: release --rm-dist --config ./../../.github/goreleaser/.goreleaser-darwin.yml
-        env:
-          # custom PAT to push in https://github.com/wundergraph/homebrew-wundergraph
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN_GORELEASER }}
-          AC_PASSWORD: ${{ secrets.AC_PASSWORD }}
-          GH_AUTH_DEMO_CLIENT_ID: ${{ secrets.GH_AUTH_DEMO_CLIENT_ID }}
-          GH_AUTH_DEMO_CLIENT_SECRET: ${{ secrets.GH_AUTH_DEMO_CLIENT_SECRET }}
-          GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
-          LICENSING_PUBLIC_KEY: ${{ secrets.LICENSING_PUBLIC_KEY }}
+  #     - name: Run GoReleaser
+  #       uses: goreleaser/goreleaser-action@v3
+  #       with:
+  #         version: latest
+  #         workdir: './cmd/wunderctl'
+  #         distribution: goreleaser-pro
+  #         args: release --rm-dist --config ./../../.github/goreleaser/.goreleaser-darwin.yml
+  #       env:
+  #         # custom PAT to push in https://github.com/wundergraph/homebrew-wundergraph
+  #         GITHUB_TOKEN: ${{ secrets.GH_TOKEN_GORELEASER }}
+  #         AC_PASSWORD: ${{ secrets.AC_PASSWORD }}
+  #         GH_AUTH_DEMO_CLIENT_ID: ${{ secrets.GH_AUTH_DEMO_CLIENT_ID }}
+  #         GH_AUTH_DEMO_CLIENT_SECRET: ${{ secrets.GH_AUTH_DEMO_CLIENT_SECRET }}
+  #         GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
+  #         LICENSING_PUBLIC_KEY: ${{ secrets.LICENSING_PUBLIC_KEY }}
 
   goreleaser-linux:
     name: Release Linux build
@@ -102,99 +105,99 @@ jobs:
         with:
           version: latest
           workdir: './cmd/wunderctl'
-          distribution: goreleaser-pro
-          args: release --rm-dist --config ./../../.github/goreleaser/.goreleaser-linux.yml
+          distribution: goreleaser
+          args: release --clean --config ./../../.github/goreleaser/.goreleaser-linux.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AC_PASSWORD: ${{ secrets.AC_PASSWORD }}
           GH_AUTH_DEMO_CLIENT_ID: ${{ secrets.GH_AUTH_DEMO_CLIENT_ID }}
           GH_AUTH_DEMO_CLIENT_SECRET: ${{ secrets.GH_AUTH_DEMO_CLIENT_SECRET }}
-          GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
+          # GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
           LICENSING_PUBLIC_KEY: ${{ secrets.LICENSING_PUBLIC_KEY }}
 
-  goreleaser-win:
-    name: Release Windows build
-    runs-on: 'windows-latest'
-    timeout-minutes: 20
-    steps:
-      - name: Prepare git
-        # To fix the EOL issues on Windows runners, we need to disable autocrlf. See actions/checkout#135 for more info.
-        # https://github.com/actions/checkout/issues/135#issuecomment-613361104
-        run: |
-          git config --global core.autocrlf false
-          git config --global core.eol lf
+  # goreleaser-win:
+  #   name: Release Windows build
+  #   runs-on: 'windows-latest'
+  #   timeout-minutes: 20
+  #   steps:
+  #     - name: Prepare git
+  #       # To fix the EOL issues on Windows runners, we need to disable autocrlf. See actions/checkout#135 for more info.
+  #       # https://github.com/actions/checkout/issues/135#issuecomment-613361104
+  #       run: |
+  #         git config --global core.autocrlf false
+  #         git config --global core.eol lf
 
-      - name: checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.client_payload.ref }}
+  #     - name: checkout
+  #       uses: actions/checkout@v3
+  #       with:
+  #         fetch-depth: 0
+  #         ref: ${{ github.event.client_payload.ref }}
 
-      - uses: ./.github/actions/go
-        with:
-          working-directory: ${{ env.WORKING_DIRECTORY }}
+  #     - uses: ./.github/actions/go
+  #       with:
+  #         working-directory: ${{ env.WORKING_DIRECTORY }}
 
-      - name: Install Protoc
-        uses: abelfodil/protoc-action@v1
-        with:
-          protoc-version: '21.5'
+  #     - name: Install Protoc
+  #       uses: abelfodil/protoc-action@v1
+  #       with:
+  #         protoc-version: '21.5'
 
-      - name: go env
-        run: go env
+  #     - name: go env
+  #       run: go env
 
-      - name: generate go types based on protobuf definitions
-        run: make codegen-go
+  #     - name: generate go types based on protobuf definitions
+  #       run: make codegen-go
 
-      - name: Check if git is not dirty after generating files
-        run: git diff --no-ext-diff --exit-code
+  #     - name: Check if git is not dirty after generating files
+  #       run: git diff --no-ext-diff --exit-code
 
-      - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v3
-        with:
-          version: latest
-          workdir: './cmd/wunderctl'
-          distribution: goreleaser-pro
-          args: release --rm-dist --config ./../../.github/goreleaser/.goreleaser-windows.yml
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          AC_PASSWORD: ${{ secrets.AC_PASSWORD }}
-          GH_AUTH_DEMO_CLIENT_ID: ${{ secrets.GH_AUTH_DEMO_CLIENT_ID }}
-          GH_AUTH_DEMO_CLIENT_SECRET: ${{ secrets.GH_AUTH_DEMO_CLIENT_SECRET }}
-          GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
-          LICENSING_PUBLIC_KEY: ${{ secrets.LICENSING_PUBLIC_KEY }}
+  #     - name: Run GoReleaser
+  #       uses: goreleaser/goreleaser-action@v3
+  #       with:
+  #         version: latest
+  #         workdir: './cmd/wunderctl'
+  #         distribution: goreleaser-pro
+  #         args: release --rm-dist --config ./../../.github/goreleaser/.goreleaser-windows.yml
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         AC_PASSWORD: ${{ secrets.AC_PASSWORD }}
+  #         GH_AUTH_DEMO_CLIENT_ID: ${{ secrets.GH_AUTH_DEMO_CLIENT_ID }}
+  #         GH_AUTH_DEMO_CLIENT_SECRET: ${{ secrets.GH_AUTH_DEMO_CLIENT_SECRET }}
+  #         GORELEASER_KEY: ${{ secrets.GORELEASER_KEY }}
+  #         LICENSING_PUBLIC_KEY: ${{ secrets.LICENSING_PUBLIC_KEY }}
 
-  release-wunderctl:
-    # https://docs.npmjs.com/generating-provenance-statements#publishing-packages-with-provenance-via-github-actions
-    permissions:
-      id-token: write
-    name: Release wunderctl wrapper
-    needs:
-      - goreleaser-linux
-      - goreleaser-win
-      - goreleaser-darwin
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.client_payload.ref }}
+  # release-wunderctl:
+  #   # https://docs.npmjs.com/generating-provenance-statements#publishing-packages-with-provenance-via-github-actions
+  #   permissions:
+  #     id-token: write
+  #   name: Release wunderctl wrapper
+  #   needs:
+  #     - goreleaser-linux
+  #     # - goreleaser-win
+  #     # - goreleaser-darwin
+  #   runs-on: ubuntu-latest
+  #   timeout-minutes: 20
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #       with:
+  #         fetch-depth: 0
+  #         ref: ${{ github.event.client_payload.ref }}
 
-      - uses: ./.github/actions/node
-        with:
-          working-directory: ${{ env.WORKING_DIRECTORY }}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+  #     - uses: ./.github/actions/node
+  #       with:
+  #         working-directory: ${{ env.WORKING_DIRECTORY }}
+  #         repo-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: pnpm install --ignore-scripts
+  #     - run: pnpm install --ignore-scripts
 
-      - run: pnpm run build:libs
+  #     - run: pnpm run build:libs
 
-      - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  #     - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+  #       env:
+  #         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - run: pnpm publish --access public --tag latest --no-git-checks
-        # https://github.blog/2023-04-19-introducing-npm-package-provenance
-        env:
-          NPM_CONFIG_PROVENANCE: true
-        working-directory: packages/wunderctl
+  #     - run: pnpm publish --access public --tag latest --no-git-checks
+  #       # https://github.blog/2023-04-19-introducing-npm-package-provenance
+  #       env:
+  #         NPM_CONFIG_PROVENANCE: true
+  #       working-directory: packages/wunderctl

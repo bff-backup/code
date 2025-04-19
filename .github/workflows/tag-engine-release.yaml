@@ -19,6 +19,9 @@ concurrency:
   group: ${{github.workflow}}-${{github.head_ref}}
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   tag-release:
     name: Create a new release
@@ -26,8 +29,8 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN_WORKFLOW_PUBLISH }}
+        # with:
+        #   token: ${{ secrets.GH_TOKEN_WORKFLOW_PUBLISH }}
 
       - name: git config
         run: |
@@ -54,6 +57,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          repository: wundergraph/wundergraph
+          repository: bff-backup/code
           event-type: release-engine
           client-payload: '{"ref": "v${{ steps.tag.outputs.release_version }}"}'
